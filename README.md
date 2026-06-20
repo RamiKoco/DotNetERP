@@ -55,35 +55,6 @@ Veri akışı: **Model (Entity) → Dal → BLL → UI**; DTO'lar katmanlar aras
 
 ---
 
-## Kurulum
-
-**Gereksinimler:** Visual Studio, SQL Server (veya LocalDB), DevExpress 24.1 (NuGet üzerinden).
-
-1. Depoyu klonla:
-   ```bash
-   git clone https://github.com/RamiKoco/DotNetERP.git
-   ```
-2. `DotNet.ERP.UI.Win` projesindeki `App.config` içinde bağlantı dizesini kendi ortamına göre düzenle:
-   ```xml
-   <connectionStrings>
-     <add name="ERPContext"
-          connectionString="Data Source=.\SQLEXPRESS;Initial Catalog=DotNetERP2025;Integrated Security=True"
-          providerName="System.Data.SqlClient" />
-   </connectionStrings>
-   ```
-   > Not: Gerçek sunucu adı, kullanıcı adı veya parola **asla** depoya eklenmemelidir. Windows kimlik doğrulaması (Integrated Security) kullanmak en güvenli yoldur.
-3. Veritabanını oluştur (migration veya hazır script ile).
-4. Çözümü Visual Studio'da aç, başlangıç projesi olarak `DotNet.ERP.UI.Win` (ya da yönetim arayüzü için `DotNet.ERP.UI.Yonetim`) seç ve çalıştır.
-
----
-
-## Ekran Görüntüleri
-
-> Buraya uygulamanın ekran görüntülerini ekleyebilirsin (CRM kartı, takvim ekranı vb.).
-> Görselleri `/docs/screenshots/` klasörüne koyup buradan referans verebilirsin.
-
----
-
 ## Lisans
 
 Bu proje [MIT Lisansı](./LICENSE) ile lisanslanmıştır.
