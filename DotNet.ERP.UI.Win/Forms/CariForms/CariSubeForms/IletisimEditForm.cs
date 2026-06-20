@@ -1,0 +1,478 @@
+﻿using DotNet.ERP.Bll.General;
+using DotNet.ERP.Common.Enums;
+using DotNet.ERP.Common.Functions;
+using DotNet.ERP.Data.Contexts;
+using DotNet.ERP.Model.Dto;
+using DotNet.ERP.Model.Entities;
+using DotNet.ERP.UI.Win.Forms.BaseForms;
+using DotNet.ERP.UI.Win.UserControls.Controls;
+using DevExpress.XtraBars;
+using DevExpress.XtraEditors;
+using DevExpress.XtraEditors.Controls;
+using System;
+using System.Linq;
+using System.Windows.Forms;
+using DotNet.ERP.UI.Win.Forms.Functions;
+
+namespace DotNet.ERP.UI.Win.Forms.CariForms.CariSubeForms
+{
+    public partial class IletisimEditForm : BaseEditForm
+    {
+        #region Variables
+        private readonly long _cariSubeId;
+        private readonly string _cariSubeAdi;
+        private long? _anaKayitId;
+        private long? _kayitId;
+        #endregion
+  
+        public IletisimEditForm(params object[] prm)
+        {
+            InitializeComponent();
+
+            if (prm != null)
+            {
+                if (prm.Length > 0 && prm[0] != null)
+                    _cariSubeId = Convert.ToInt64(prm[0]);
+
+                if (prm.Length > 1 && prm[1] != null)
+                    _cariSubeAdi = prm[1].ToString();
+
+            }
+
+            OrtakKurulum();
+        }
+       
+        public IletisimEditForm(long? cariSubeId, long? anaKayitId)
+        {
+            InitializeComponent();
+            _cariSubeId = cariSubeId ?? 0;
+            _anaKayitId = anaKayitId;
+            OrtakKurulum();
+        }
+        private void OrtakKurulum()
+        {            
+            DataLayoutControl = myDataLayoutControl;
+            Bll = new IletisimBll(myDataLayoutControl);
+            HideItems = new BarItem[] { btnYeni };            
+            txtIletisimTurleri.Properties.Items.AddRange(
+                EnumFunctions.GetEnumDescriptionList<IletisimTuru>());
+            txtIzinDurumu.Properties.Items.AddRange(
+                EnumFunctions.GetEnumDescriptionList<IletisimDurumu>());
+            txtKanallar.Properties.Items.AddRange(
+                EnumFunctions.GetEnumDescriptionList<IletisimKanalTipi>()
+                    .Cast<string>()
+                    .Select(x => new CheckedListBoxItem(x))
+                    .ToArray());
+            BaseKartTuru = KartTuru.Iletisim;            
+            txtIletisimTurleri.EditValueChanged += TxtIletisimTurleri_EditValueChanged;
+            tglVoip.EditValueChanged += tglVoip_EditValueChanged;
+            EventsLoad();
+            
+            if (!string.IsNullOrWhiteSpace(_cariSubeAdi))
+            {
+                Text = Text + $" - ( {_cariSubeAdi} )";
+            }
+        }
+        public override void Yukle()
+        {
+            OldEntity = BaseIslemTuru == IslemTuru.EntityInsert ? new IletisimS() : ((IletisimBll)Bll).Single(Functions.FilterFunctions.Filter<Iletisim>(Id));
+            if (BaseIslemTuru != IslemTuru.EntityInsert)
+            {
+                var old = (IletisimS)OldEntity;
+                if (_kayitId == null)
+                    _kayitId = old.KayitId;
+                if (_anaKayitId == null)
+                    _anaKayitId = old.AnaKayitId;
+            }
+
+            NesneyiKontrollereBagla();           
+            if (BaseIslemTuru != IslemTuru.EntityInsert) return;
+            Id = BaseIslemTuru.IdOlustur(OldEntity);
+            txtKod.Text = ((IletisimBll)Bll).YeniKodVer(x => x.CariSubeId == _cariSubeId);
+            txtBaslik.Focus();
+        }
+        protected override void NesneyiKontrollereBagla()
+        {
+            var entity = (IletisimS)OldEntity;
+            txtKod.Text = entity.Kod;
+            txtBaslik.Text = entity.Baslik;
+            txtIletisimTurleri.EditValue = entity.IletisimTuru.ToName();            
+            if (entity.IletisimTuru == IletisimTuru.EPosta)
+            {
+                txtKanallar.SetEditValue(entity.EPBool ? "E-Posta" : null);
+            }
+            else
+            {
+                txtKanallar.SetEditValue(entity.Kanallar);
+            }
+            txtIzinDurumu.SelectedItem = entity.IzinDurumu.ToName();
+            entity.KayitTuru = KayitTuru.CariSube;
+            txtIzinTarihi.EditValue = entity.IzinTarihi;
+            txtOncelik.Value = entity.Oncelik;
+            txtWeb.Text = entity.Web;
+            txtUlkeKodu.Text = entity.UlkeKodu;
+            txtTelefonVeFax.Text = entity.Numara;
+            txtDahili.Text = entity.DahiliNo;
+            txtEPosta.Text = entity.EPosta;
+            txtKisi.Id = entity.IlgiliKisiId;
+            txtKisi.Text = entity.IlgiliKisiAdi;
+            txtKullaniciAdi.Text = entity.KullaniciAdi;
+            txtSIPKullaniciAdi.Text = entity.SIPKullaniciAdi;
+            txtSIPServer.Text = entity.SIPServer;
+            txtSosyalMedyaUrl.Text = entity.SosyalMedyaUrl;
+            txtSosyalMedyaPlatformu.Id = entity.SosyalMedyaPlatformuId;
+            txtSosyalMedyaPlatformu.Text = entity.SosyalMedyaPlatformuAdi;
+            txtOzelKod1.Id = entity.OzelKod1Id;
+            txtOzelKod1.Text = entity.OzelKod1Adi;
+            txtOzelKod2.Id = entity.OzelKod2Id;
+            txtOzelKod2.Text = entity.OzelKod2Adi;
+            txtAciklama.Text = entity.Aciklama;
+            //tglVarsayilanYap.IsOn = entity.VarsayilanYap;
+            tglVoip.IsOn = entity.VoipMi;
+            tglDurum.IsOn = entity.Durum;
+            _kayitId = entity.KayitId;
+            _anaKayitId = entity.AnaKayitId;
+        }
+        protected override void GuncelNesneOlustur()
+        {
+            var eskiEntity = OldEntity as IletisimS;
+
+            var iletisimTuru = txtIletisimTurleri.Text.GetEnum<IletisimTuru>();
+            bool kanallarKullanilacak =
+              iletisimTuru == IletisimTuru.Telefon ||
+              iletisimTuru == IletisimTuru.EPosta;
+
+            var kanalListesi = (txtKanallar.EditValue?.ToString() ?? "")
+                               .Split(new[] { ',', ';' }, StringSplitOptions.RemoveEmptyEntries)
+                               .Select(x => x.Trim())
+                               .ToList();
+
+            bool eskiArama = eskiEntity?.Arama ?? false;
+            bool eskiSms = eskiEntity?.Sms ?? false;
+            bool eskiWhatsapp = eskiEntity?.Whatsapp ?? false;
+            bool eskiEposta = eskiEntity?.EPBool ?? false;
+
+            bool yeniArama = false;
+            bool yeniSms = false;
+            bool yeniWhatsapp = false;
+            bool yeniEposta = false;
+
+            if (kanallarKullanilacak)
+            {
+                yeniArama = kanalListesi.Contains("Arama");
+                yeniSms = kanalListesi.Contains("SMS");
+                yeniWhatsapp = kanalListesi.Contains("Whatsapp");
+                yeniEposta = kanalListesi.Contains("E-Posta");
+            }
+            long? kayitId = _cariSubeId;          
+            long? anaKayitId = null;
+            if (eskiEntity != null && eskiEntity.CariId != null && eskiEntity.CariId != 0)
+            {
+                anaKayitId = eskiEntity.CariId;
+            }
+            else
+            {
+                using (var ctx = new ERPContext())
+                {
+                    anaKayitId = ctx.CariSube
+                                    .Where(s => s.Id == _cariSubeId)
+                                    .Select(s => (long?)s.CariId)
+                                    .FirstOrDefault();
+                }
+            }           
+            string parentCariUnvan = eskiEntity?.KayitHesabiAdi;
+
+            if (eskiEntity != null && !string.IsNullOrEmpty(eskiEntity.KayitHesabiAdi))
+                parentCariUnvan = eskiEntity.KayitHesabiAdi;
+            else if (anaKayitId != null)
+            {
+                using (var ctx = new ERPContext())
+                {
+                    parentCariUnvan = ctx.Cari
+                                          .Where(c => c.Id == anaKayitId.Value)
+                                          .Select(c => c.Unvan)
+                                          .FirstOrDefault();
+                }
+            }
+
+            CurrentEntity = new Iletisim
+            {
+                Id = Id,
+                Kod = txtKod.Text,
+                Baslik = txtBaslik.Text,
+                Oncelik = (short)txtOncelik.Value,
+                Web = txtWeb.Text,
+                KayitTuru = KayitTuru.CariSube,
+                IletisimTuru = txtIletisimTurleri.Text.GetEnum<IletisimTuru>(),
+                IzinDurumu = txtIzinDurumu.Text.GetEnum<IletisimDurumu>(),
+                Kanallar = kanallarKullanilacak
+                            ? txtKanallar.EditValue?.ToString()
+                            : null,
+                Arama = yeniArama,
+                Sms = yeniSms,
+                Whatsapp = yeniWhatsapp,
+                EPBool = yeniEposta,
+                IzinTarihi = (DateTime?)txtIzinTarihi.EditValue,
+                UlkeKodu = txtUlkeKodu.Text,
+                Numara = txtTelefonVeFax.Text,
+                DahiliNo = txtDahili.Text,
+                EPosta = txtEPosta.Text,
+                IlgiliKisiId = txtKisi.Id,
+                KullaniciAdi = txtKullaniciAdi.Text,
+                SIPServer = txtSIPServer.Text,
+                SIPKullaniciAdi = txtSIPKullaniciAdi.Text,
+                SosyalMedyaUrl = txtSosyalMedyaUrl.Text,
+                SosyalMedyaPlatformuId = txtSosyalMedyaPlatformu.Id,               
+                OzelKod1Id = txtOzelKod1.Id,
+                OzelKod2Id = txtOzelKod2.Id,
+                Aciklama = txtAciklama.Text,               
+                VoipMi = tglVoip.IsOn,
+                Durum = tglDurum.IsOn,
+                //CariSubeId = BaseIslemTuru == IslemTuru.EntityInsert ? _cariSubeId : ((IletisimS)OldEntity).CariSubeId,
+                CariSubeId = BaseIslemTuru == IslemTuru.EntityInsert ? _cariSubeId : eskiEntity?.CariSubeId,
+                AnaKayitId = anaKayitId,
+                //KayitId = BaseIslemTuru == IslemTuru.EntityInsert ? _cariSubeId : ((IletisimS)OldEntity).CariSubeId,
+                KayitId = BaseIslemTuru == IslemTuru.EntityInsert ? _cariSubeId : eskiEntity?.KayitId,
+                KayitHesabiAdi = parentCariUnvan ?? eskiEntity?.KayitHesabiAdi,
+                AnaKayitHesabiAdi = _cariSubeAdi ?? eskiEntity?.AnaKayitHesabiAdi,               
+            };
+     
+            ButonEnabledDurumu();
+        }      
+        protected internal override void ButonEnabledDurumu()
+        {
+            if (!IsLoaded) return;
+            base.ButonEnabledDurumu();
+            if (txtIletisimTurleri.EditValue == null) return;
+            IletisimTuru iletisimTuru;
+            try
+            {
+                iletisimTuru = EnumFunctions.GetValueFromDescription<IletisimTuru>(txtIletisimTurleri.EditValue.ToString());
+            }
+            catch
+            {
+                return;
+            }
+        }     
+        protected override bool EntityInsert()
+        {
+            return ((IletisimBll)Bll).Insert(CurrentEntity, x => x.Kod == CurrentEntity.Kod && x.CariSubeId == _cariSubeId);
+        }
+        protected override bool EntityUpdate()
+        {
+            return ((IletisimBll)Bll).Update(OldEntity, CurrentEntity, x => x.Kod == CurrentEntity.Kod && x.CariSubeId == _cariSubeId);
+        }
+        protected override void SecimYap(object sender)
+        {
+            if (sender is MyButtonEdit mbe && mbe.IsClearButtonClick)
+                return;
+            if (!(sender is ButtonEdit)) return;
+
+            using (var sec = new Functions.SelectFunctions())
+                if (sender == txtOzelKod1)
+                    sec.Sec(txtOzelKod1, KartTuru.Iletisim);
+                else if (sender == txtOzelKod2)
+                    sec.Sec(txtOzelKod2, KartTuru.Iletisim);
+                else if (sender == txtSosyalMedyaPlatformu)
+                    sec.Sec(txtSosyalMedyaPlatformu, KartTuru.SosyalMedyaPlatformu);
+                else if (sender == txtKisi)
+                    sec.Sec(txtKisi, KartTuru.Kisi);
+        }
+
+        #region İletişim Türleri
+        private void tglVoip_EditValueChanged(object sender, EventArgs e)
+        {
+            bool isVoip = Convert.ToBoolean(tglVoip.EditValue);
+
+            txtSIPKullaniciAdi.Enabled = isVoip;
+            txtSIPServer.Enabled = isVoip;
+        }
+        private void SetKanallarByIletisimTuru(IletisimTuru tur)
+        {
+            txtKanallar.Properties.Items.Clear();
+            txtKanallar.SetEditValue(null);
+
+            if (tur == IletisimTuru.Telefon)
+            {
+                foreach (var item in EnumFunctions
+                         .GetEnumDescriptionList<IletisimKanalTipi>()
+                         .Cast<string>())
+                {
+                    txtKanallar.Properties.Items.Add(
+                        new CheckedListBoxItem(item, false)
+                    );
+                }
+            }
+            else if (tur == IletisimTuru.EPosta)
+            {
+                txtKanallar.Properties.Items.Add(
+                    new CheckedListBoxItem("E-Posta", true) // ✅ default seçili
+                );
+
+                txtKanallar.SetEditValue("E-Posta");       // 🔥 KRİTİK
+            }
+        }
+        private void TxtIletisimTurleri_EditValueChanged(object sender, EventArgs e)
+        {
+            if (txtIletisimTurleri.EditValue == null) return;
+
+            IletisimTuru iletisimTuru;
+
+            try
+            {
+                iletisimTuru = EnumFunctions.GetValueFromDescription<IletisimTuru>(txtIletisimTurleri.EditValue.ToString());
+            }
+            catch
+            {
+                return;
+            }
+
+            txtUlkeKodu.Enabled = iletisimTuru == IletisimTuru.Telefon || iletisimTuru == IletisimTuru.Fax;
+            txtTelefonVeFax.Enabled = iletisimTuru == IletisimTuru.Telefon || iletisimTuru == IletisimTuru.Fax;
+            txtDahili.Enabled = iletisimTuru == IletisimTuru.Telefon;
+            txtEPosta.Enabled = iletisimTuru == IletisimTuru.EPosta;
+            txtWeb.Enabled = iletisimTuru == IletisimTuru.Web;
+            txtSosyalMedyaPlatformu.Enabled = iletisimTuru == IletisimTuru.SosyalMedya;
+            txtSosyalMedyaUrl.Enabled = iletisimTuru == IletisimTuru.SosyalMedya;
+            txtKullaniciAdi.Enabled = iletisimTuru == IletisimTuru.SosyalMedya;
+            txtOncelik.Enabled = iletisimTuru == IletisimTuru.Telefon || iletisimTuru == IletisimTuru.Fax || iletisimTuru == IletisimTuru.EPosta;
+            txtIzinDurumu.Enabled = iletisimTuru == IletisimTuru.Telefon || iletisimTuru == IletisimTuru.EPosta;
+            txtIzinTarihi.Enabled = iletisimTuru == IletisimTuru.Telefon || iletisimTuru == IletisimTuru.EPosta;
+            txtKanallar.Enabled = iletisimTuru == IletisimTuru.Telefon || iletisimTuru == IletisimTuru.EPosta;
+            tglVoip.Enabled = iletisimTuru == IletisimTuru.Telefon;
+            txtSIPServer.Enabled = iletisimTuru == IletisimTuru.Telefon;
+            txtSIPKullaniciAdi.Enabled = iletisimTuru == IletisimTuru.Telefon;
+            switch (iletisimTuru)
+            {
+                case IletisimTuru.Telefon:
+                    txtSosyalMedyaPlatformu.Id = null;
+                    ClearControls(txtEPosta, txtWeb, txtSosyalMedyaPlatformu, txtSosyalMedyaUrl, txtKullaniciAdi);
+                    tglVoip.EditValue = false;
+                    txtSIPKullaniciAdi.Enabled = Convert.ToBoolean(tglVoip.EditValue);
+                    txtSIPServer.Enabled = Convert.ToBoolean(tglVoip.EditValue);
+                    SetKanallarByIletisimTuru(IletisimTuru.Telefon);
+                    txtBaslik.Focus();
+                    break;
+
+                case IletisimTuru.EPosta:
+                    txtSosyalMedyaPlatformu.Id = null;
+                    ClearControls(txtUlkeKodu, txtTelefonVeFax, txtDahili, txtWeb, txtSosyalMedyaPlatformu, txtSosyalMedyaUrl, txtKullaniciAdi, txtSIPKullaniciAdi, txtSIPServer, tglVoip);
+                    SetKanallarByIletisimTuru(IletisimTuru.EPosta);
+                    txtBaslik.Focus();
+                    break;
+
+                case IletisimTuru.Web:
+                    txtSosyalMedyaPlatformu.Id = null;
+                    txtKanallar.Enabled = false;
+                    ClearControls(txtUlkeKodu, txtTelefonVeFax, txtDahili, txtEPosta, txtOncelik, txtIzinDurumu, txtIzinTarihi, txtSosyalMedyaUrl, txtSosyalMedyaPlatformu, txtKullaniciAdi, txtSIPKullaniciAdi, txtSIPServer);
+                    txtBaslik.Focus();
+                    break;
+
+                case IletisimTuru.SosyalMedya:
+                    txtKanallar.Enabled = false;
+                    ClearControls(txtUlkeKodu, txtTelefonVeFax, txtDahili, txtEPosta, txtOncelik, txtIzinDurumu, txtIzinTarihi, txtWeb, txtSIPKullaniciAdi, txtSIPServer);
+                    txtBaslik.Focus();
+                    break;
+
+                case IletisimTuru.Fax:
+                    txtSosyalMedyaPlatformu.Id = null;
+                    txtKanallar.Enabled = false;
+                    ClearControls(txtDahili, txtEPosta, txtIzinDurumu, txtIzinTarihi, txtKanallar, txtWeb, txtSosyalMedyaPlatformu, txtSosyalMedyaUrl, txtKullaniciAdi, txtSIPKullaniciAdi, txtSIPServer);
+                    txtBaslik.Focus();
+                    break;
+            }
+        }
+        private void ClearControls(params Control[] controls)
+        {
+            foreach (var c in controls)
+            {
+                if (c is DateEdit de)
+                {
+                    de.EditValue = null;
+                }
+                else if (c is ComboBoxEdit ce)
+                {
+                    ce.EditValue = null;
+                }
+                else if (c is ButtonEdit be)
+                {
+                    be.Text = "";
+                    if (be.Tag != null) be.Tag = null;
+                }
+                else if (c is TextEdit te)
+                {
+                    // TextEdit ama DateEdit veya ComboBoxEdit değil
+                    if (!(te is DateEdit) && !(te is ComboBoxEdit))
+                        te.Text = "";
+                }
+                else if (c is CheckedComboBoxEdit cce)
+                {
+                    cce.SetEditValue(null);
+                }
+                else if (c is ToggleSwitch ts)
+                {
+                    ts.EditValue = false;
+                }
+            }
+        }
+        #endregion
+        //private object Normalize(object value)
+        //{
+        //    if (value == null)
+        //        return null;
+
+        //    var type = value.GetType();
+
+        //    if (type == typeof(string))
+        //        return (value as string)?.Trim();
+
+        //    if (type == typeof(DateTime))
+        //    {
+        //        var d = (DateTime)value;
+        //        return d == default(DateTime) ? null : (object)d;
+        //    }
+
+        //    return value;
+        //}
+
+        //private void DegisimTespitDebug(object oldEntity, object currentEntity)
+        //{
+        //    if (oldEntity == null || currentEntity == null)
+        //        return;
+
+        //    var type = oldEntity.GetType();
+        //    var props = type.GetProperties()
+        //        .Where(p => p.CanRead && p.GetIndexParameters().Length == 0);
+
+        //    var farklar = new List<string>();
+
+        //    foreach (var p in props)
+        //    {
+        //        var p2 = currentEntity.GetType().GetProperty(p.Name);
+        //        if (p2 == null) continue;
+
+        //        var oldVal = Normalize(p.GetValue(oldEntity, null));
+        //        var newVal = Normalize(p2.GetValue(currentEntity, null));
+
+        //        if (!object.Equals(oldVal, newVal))
+        //        {
+        //            farklar.Add(
+        //                p.Name + "  |  OLD = " +
+        //                (oldVal ?? "null") +
+        //                "  |  NEW = " +
+        //                (newVal ?? "null")
+        //            );
+        //        }
+        //    }
+
+        //    if (farklar.Count > 0)
+        //        MessageBox.Show(
+        //            "FORM AÇILIRKEN FARK ALGILANDI:\n\n" +
+        //            string.Join("\n", farklar),
+        //            "DEBUG");
+        //    else
+        //        MessageBox.Show("Form açılışında fark bulunmadı.", "DEBUG");
+        //}
+
+    }
+}

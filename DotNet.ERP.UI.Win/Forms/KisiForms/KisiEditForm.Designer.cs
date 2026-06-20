@@ -1,0 +1,1535 @@
+﻿namespace DotNet.ERP.UI.Win.Forms.KisiForms
+{
+
+    partial class KisiEditForm
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            DevExpress.XtraLayout.ColumnDefinition columnDefinition1 = new DevExpress.XtraLayout.ColumnDefinition();
+            DevExpress.XtraLayout.ColumnDefinition columnDefinition2 = new DevExpress.XtraLayout.ColumnDefinition();
+            DevExpress.XtraLayout.ColumnDefinition columnDefinition3 = new DevExpress.XtraLayout.ColumnDefinition();
+            DevExpress.XtraLayout.ColumnDefinition columnDefinition4 = new DevExpress.XtraLayout.ColumnDefinition();
+            DevExpress.XtraLayout.ColumnDefinition columnDefinition5 = new DevExpress.XtraLayout.ColumnDefinition();
+            DevExpress.XtraLayout.ColumnDefinition columnDefinition6 = new DevExpress.XtraLayout.ColumnDefinition();
+            DevExpress.XtraLayout.ColumnDefinition columnDefinition7 = new DevExpress.XtraLayout.ColumnDefinition();
+            DevExpress.XtraLayout.ColumnDefinition columnDefinition8 = new DevExpress.XtraLayout.ColumnDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition1 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition2 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition3 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition4 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition5 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition6 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition7 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.ColumnDefinition columnDefinition9 = new DevExpress.XtraLayout.ColumnDefinition();
+            DevExpress.XtraLayout.ColumnDefinition columnDefinition10 = new DevExpress.XtraLayout.ColumnDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition8 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition9 = new DevExpress.XtraLayout.RowDefinition();
+            this.DataLayoutGenel = new DotNet.ERP.UI.Win.UserControls.Controls.MyDataLayoutControl();
+            this.tabAlt = new DevExpress.XtraBars.Navigation.TabPane();
+            this.pageAktiviteler = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            this.grid = new DotNet.ERP.UI.Win.UserControls.Grid.MyGridControl();
+            this.tablo = new DotNet.ERP.UI.Win.UserControls.Grid.MyGridView();
+            this.colId = new DotNet.ERP.UI.Win.UserControls.Grid.MyGridColumn();
+            this.colKod = new DotNet.ERP.UI.Win.UserControls.Grid.MyGridColumn();
+            this.myGridColumn1 = new DotNet.ERP.UI.Win.UserControls.Grid.MyGridColumn();
+            this.myGridColumn2 = new DotNet.ERP.UI.Win.UserControls.Grid.MyGridColumn();
+            this.myGridColumn3 = new DotNet.ERP.UI.Win.UserControls.Grid.MyGridColumn();
+            this.myGridColumn4 = new DotNet.ERP.UI.Win.UserControls.Grid.MyGridColumn();
+            this.myGridColumn5 = new DotNet.ERP.UI.Win.UserControls.Grid.MyGridColumn();
+            this.myGridColumn6 = new DotNet.ERP.UI.Win.UserControls.Grid.MyGridColumn();
+            this.myGridColumn7 = new DotNet.ERP.UI.Win.UserControls.Grid.MyGridColumn();
+            this.myGridColumn8 = new DotNet.ERP.UI.Win.UserControls.Grid.MyGridColumn();
+            this.myGridColumn9 = new DotNet.ERP.UI.Win.UserControls.Grid.MyGridColumn();
+            this.pageGorevler = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            this.gorevlerGrid = new DotNet.ERP.UI.Win.UserControls.Grid.MyGridControl();
+            this.gorevlerTablo = new DotNet.ERP.UI.Win.UserControls.Grid.MyGridView();
+            this.colId1 = new DotNet.ERP.UI.Win.UserControls.Grid.MyGridColumn();
+            this.colKod1 = new DotNet.ERP.UI.Win.UserControls.Grid.MyGridColumn();
+            this.myGridColumn10 = new DotNet.ERP.UI.Win.UserControls.Grid.MyGridColumn();
+            this.myGridColumn13 = new DotNet.ERP.UI.Win.UserControls.Grid.MyGridColumn();
+            this.myGridColumn12 = new DotNet.ERP.UI.Win.UserControls.Grid.MyGridColumn();
+            this.myGridColumn11 = new DotNet.ERP.UI.Win.UserControls.Grid.MyGridColumn();
+            this.pageDokumanlar = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            this.dokumanlarGrid = new DotNet.ERP.UI.Win.UserControls.Grid.MyGridControl();
+            this.dokumanlarTablo = new DotNet.ERP.UI.Win.UserControls.Grid.MyGridView();
+            this.colId2 = new DotNet.ERP.UI.Win.UserControls.Grid.MyGridColumn();
+            this.colKod2 = new DotNet.ERP.UI.Win.UserControls.Grid.MyGridColumn();
+            this.myGridColumn14 = new DotNet.ERP.UI.Win.UserControls.Grid.MyGridColumn();
+            this.myGridColumn15 = new DotNet.ERP.UI.Win.UserControls.Grid.MyGridColumn();
+            this.myGridColumn16 = new DotNet.ERP.UI.Win.UserControls.Grid.MyGridColumn();
+            this.myGridColumn17 = new DotNet.ERP.UI.Win.UserControls.Grid.MyGridColumn();
+            this.pageEkler = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            this.tabUst = new DevExpress.XtraBars.Navigation.TabPane();
+            this.pageGenelBilgiler = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            this.DataLayoutGenelBilgiler = new DotNet.ERP.UI.Win.UserControls.Controls.MyDataLayoutControl();
+            this.txtKayitKaynak = new DotNet.ERP.UI.Win.UserControls.Controls.MyButtonEdit();
+            this.txtContainer = new DotNet.ERP.UI.Win.UserControls.Controls.MyPopupContainerEdit();
+            this.tglDurum = new DotNet.ERP.UI.Win.UserControls.Controls.MyToogleSwitch();
+            this.txtAciklama = new DotNet.ERP.UI.Win.UserControls.Controls.MyMemoEdit();
+            this.txtDogumTarihi = new DotNet.ERP.UI.Win.UserControls.Controls.MyDateEdit();
+            this.txtKod = new DotNet.ERP.UI.Win.UserControls.Controls.MyKodTextEdit();
+            this.txtCinsiyet = new DotNet.ERP.UI.Win.UserControls.Controls.MyComboBoxEdit();
+            this.txtSoyAdi = new DotNet.ERP.UI.Win.UserControls.Controls.MyTextEdit();
+            this.txtAdi = new DotNet.ERP.UI.Win.UserControls.Controls.MyTextEdit();
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem16 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem14 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem15 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.pageAdresBilgileri = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            this.pageIletisimBilgileri = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            this.pageYorumlar = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            this.pageBaglantilar = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.txtKisiGrubu = new DotNet.ERP.UI.Win.UserControls.Controls.MyButtonEdit();
+            this.txtSorumlu = new DotNet.ERP.UI.Win.UserControls.Controls.MyButtonEdit();
+            this.txtMeslek = new DotNet.ERP.UI.Win.UserControls.Controls.MyButtonEdit();
+            this.txtOzelKod1 = new DotNet.ERP.UI.Win.UserControls.Controls.MyButtonEdit();
+            this.txtOzelKod2 = new DotNet.ERP.UI.Win.UserControls.Controls.MyButtonEdit();
+            this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resimMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataLayoutGenel)).BeginInit();
+            this.DataLayoutGenel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tabAlt)).BeginInit();
+            this.tabAlt.SuspendLayout();
+            this.pageAktiviteler.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tablo)).BeginInit();
+            this.pageGorevler.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gorevlerGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gorevlerTablo)).BeginInit();
+            this.pageDokumanlar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dokumanlarGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dokumanlarTablo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabUst)).BeginInit();
+            this.tabUst.SuspendLayout();
+            this.pageGenelBilgiler.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataLayoutGenelBilgiler)).BeginInit();
+            this.DataLayoutGenelBilgiler.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKayitKaynak.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtContainer.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tglDurum.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAciklama.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDogumTarihi.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDogumTarihi.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKod.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCinsiyet.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSoyAdi.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAdi.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKisiGrubu.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSorumlu.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMeslek.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOzelKod1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOzelKod2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // ribbonControl
+            // 
+            this.ribbonControl.ExpandCollapseItem.Id = 0;
+            this.ribbonControl.Size = new System.Drawing.Size(863, 109);
+            this.ribbonControl.Toolbar.ShowCustomizeItem = false;
+            // 
+            // DataLayoutGenel
+            // 
+            this.DataLayoutGenel.Controls.Add(this.tabAlt);
+            this.DataLayoutGenel.Controls.Add(this.tabUst);
+            this.DataLayoutGenel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DataLayoutGenel.Location = new System.Drawing.Point(0, 109);
+            this.DataLayoutGenel.Name = "DataLayoutGenel";
+            this.DataLayoutGenel.OptionsFocus.EnableAutoTabOrder = false;
+            this.DataLayoutGenel.Root = this.Root;
+            this.DataLayoutGenel.Size = new System.Drawing.Size(863, 566);
+            this.DataLayoutGenel.TabIndex = 0;
+            this.DataLayoutGenel.Text = "myDataLayoutControl1";
+            // 
+            // tabAlt
+            // 
+            this.tabAlt.AppearanceButton.Hovered.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.tabAlt.AppearanceButton.Hovered.ForeColor = System.Drawing.Color.DarkBlue;
+            this.tabAlt.AppearanceButton.Hovered.Options.UseFont = true;
+            this.tabAlt.AppearanceButton.Hovered.Options.UseForeColor = true;
+            this.tabAlt.AppearanceButton.Normal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.tabAlt.AppearanceButton.Normal.Options.UseFont = true;
+            this.tabAlt.AppearanceButton.Pressed.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.tabAlt.AppearanceButton.Pressed.ForeColor = System.Drawing.Color.Maroon;
+            this.tabAlt.AppearanceButton.Pressed.Options.UseFont = true;
+            this.tabAlt.AppearanceButton.Pressed.Options.UseForeColor = true;
+            this.tabAlt.Controls.Add(this.pageAktiviteler);
+            this.tabAlt.Controls.Add(this.pageGorevler);
+            this.tabAlt.Controls.Add(this.pageDokumanlar);
+            this.tabAlt.Controls.Add(this.pageEkler);
+            this.tabAlt.Location = new System.Drawing.Point(12, 285);
+            this.tabAlt.Name = "tabAlt";
+            this.tabAlt.PageProperties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.ImageAndText;
+            this.tabAlt.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
+            this.pageAktiviteler,
+            this.pageGorevler,
+            this.pageDokumanlar,
+            this.pageEkler});
+            this.tabAlt.RegularSize = new System.Drawing.Size(839, 274);
+            this.tabAlt.SelectedPage = this.pageAktiviteler;
+            this.tabAlt.Size = new System.Drawing.Size(839, 274);
+            this.tabAlt.TabIndex = 5;
+            this.tabAlt.Text = "tabPane2";
+            // 
+            // pageAktiviteler
+            // 
+            this.pageAktiviteler.BackgroundPadding = new System.Windows.Forms.Padding(2);
+            this.pageAktiviteler.Caption = "Aktiviteler";
+            this.pageAktiviteler.Controls.Add(this.grid);
+            this.pageAktiviteler.ImageOptions.Image = global::DotNet.ERP.UI.Win.Properties.Resources.wizard_16x16;
+            this.pageAktiviteler.Name = "pageAktiviteler";
+            this.pageAktiviteler.Size = new System.Drawing.Size(839, 241);
+            // 
+            // grid
+            // 
+            this.grid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grid.Location = new System.Drawing.Point(0, 0);
+            this.grid.MainView = this.tablo;
+            this.grid.MenuManager = this.ribbonControl;
+            this.grid.Name = "grid";
+            this.grid.Size = new System.Drawing.Size(839, 241);
+            this.grid.TabIndex = 0;
+            this.grid.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.tablo});
+            // 
+            // tablo
+            // 
+            this.tablo.Appearance.FooterPanel.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.tablo.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Maroon;
+            this.tablo.Appearance.FooterPanel.Options.UseFont = true;
+            this.tablo.Appearance.FooterPanel.Options.UseForeColor = true;
+            this.tablo.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Maroon;
+            this.tablo.Appearance.HeaderPanel.Options.UseForeColor = true;
+            this.tablo.Appearance.HeaderPanel.Options.UseTextOptions = true;
+            this.tablo.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.tablo.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.tablo.Appearance.ViewCaption.Options.UseForeColor = true;
+            this.tablo.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colId,
+            this.colKod,
+            this.myGridColumn1,
+            this.myGridColumn2,
+            this.myGridColumn3,
+            this.myGridColumn4,
+            this.myGridColumn5,
+            this.myGridColumn6,
+            this.myGridColumn7,
+            this.myGridColumn8,
+            this.myGridColumn9});
+            this.tablo.GridControl = this.grid;
+            this.tablo.Name = "tablo";
+            this.tablo.OptionsMenu.EnableColumnMenu = false;
+            this.tablo.OptionsMenu.EnableFooterMenu = false;
+            this.tablo.OptionsMenu.EnableGroupPanelMenu = false;
+            this.tablo.OptionsNavigation.EnterMoveNextColumn = true;
+            this.tablo.OptionsPrint.AutoWidth = false;
+            this.tablo.OptionsPrint.PrintFooter = false;
+            this.tablo.OptionsPrint.PrintGroupFooter = false;
+            this.tablo.OptionsView.ColumnAutoWidth = false;
+            this.tablo.OptionsView.HeaderFilterButtonShowMode = DevExpress.XtraEditors.Controls.FilterButtonShowMode.Button;
+            this.tablo.OptionsView.RowAutoHeight = true;
+            this.tablo.OptionsView.ShowAutoFilterRow = true;
+            this.tablo.OptionsView.ShowGroupPanel = false;
+            this.tablo.OptionsView.ShowViewCaption = true;
+            this.tablo.StatusBarAciklama = null;
+            this.tablo.StatusBarKisaYol = null;
+            this.tablo.StatusBarKisaYolAciklama = null;
+            this.tablo.ViewCaption = "Aktiviteler";
+            // 
+            // colId
+            // 
+            this.colId.Caption = "Id";
+            this.colId.FieldName = "Id";
+            this.colId.Name = "colId";
+            this.colId.OptionsColumn.AllowEdit = false;
+            this.colId.OptionsColumn.ShowInCustomizationForm = false;
+            this.colId.StatusBarAciklama = null;
+            this.colId.StatusBarKisaYol = null;
+            this.colId.StatusBarKisaYolAciklama = null;
+            // 
+            // colKod
+            // 
+            this.colKod.AppearanceCell.Options.UseTextOptions = true;
+            this.colKod.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colKod.Caption = "Kod";
+            this.colKod.FieldName = "Kod";
+            this.colKod.Name = "colKod";
+            this.colKod.OptionsColumn.AllowEdit = false;
+            this.colKod.StatusBarAciklama = null;
+            this.colKod.StatusBarKisaYol = null;
+            this.colKod.StatusBarKisaYolAciklama = null;
+            this.colKod.Visible = true;
+            this.colKod.VisibleIndex = 0;
+            // 
+            // myGridColumn1
+            // 
+            this.myGridColumn1.Caption = "Aktivite. Türü";
+            this.myGridColumn1.Name = "myGridColumn1";
+            this.myGridColumn1.OptionsColumn.AllowEdit = false;
+            this.myGridColumn1.StatusBarAciklama = null;
+            this.myGridColumn1.StatusBarKisaYol = null;
+            this.myGridColumn1.StatusBarKisaYolAciklama = null;
+            this.myGridColumn1.Visible = true;
+            this.myGridColumn1.VisibleIndex = 1;
+            this.myGridColumn1.Width = 98;
+            // 
+            // myGridColumn2
+            // 
+            this.myGridColumn2.Caption = "Başlangıç";
+            this.myGridColumn2.Name = "myGridColumn2";
+            this.myGridColumn2.OptionsColumn.AllowEdit = false;
+            this.myGridColumn2.StatusBarAciklama = null;
+            this.myGridColumn2.StatusBarKisaYol = null;
+            this.myGridColumn2.StatusBarKisaYolAciklama = null;
+            this.myGridColumn2.Visible = true;
+            this.myGridColumn2.VisibleIndex = 2;
+            this.myGridColumn2.Width = 83;
+            // 
+            // myGridColumn3
+            // 
+            this.myGridColumn3.Caption = "Bitiş";
+            this.myGridColumn3.Name = "myGridColumn3";
+            this.myGridColumn3.OptionsColumn.AllowEdit = false;
+            this.myGridColumn3.StatusBarAciklama = null;
+            this.myGridColumn3.StatusBarKisaYol = null;
+            this.myGridColumn3.StatusBarKisaYolAciklama = null;
+            this.myGridColumn3.Visible = true;
+            this.myGridColumn3.VisibleIndex = 3;
+            // 
+            // myGridColumn4
+            // 
+            this.myGridColumn4.Caption = "Başlık";
+            this.myGridColumn4.Name = "myGridColumn4";
+            this.myGridColumn4.OptionsColumn.AllowEdit = false;
+            this.myGridColumn4.StatusBarAciklama = null;
+            this.myGridColumn4.StatusBarKisaYol = null;
+            this.myGridColumn4.StatusBarKisaYolAciklama = null;
+            this.myGridColumn4.Visible = true;
+            this.myGridColumn4.VisibleIndex = 4;
+            this.myGridColumn4.Width = 109;
+            // 
+            // myGridColumn5
+            // 
+            this.myGridColumn5.Caption = "Açıklama";
+            this.myGridColumn5.Name = "myGridColumn5";
+            this.myGridColumn5.OptionsColumn.AllowEdit = false;
+            this.myGridColumn5.StatusBarAciklama = null;
+            this.myGridColumn5.StatusBarKisaYol = null;
+            this.myGridColumn5.StatusBarKisaYolAciklama = null;
+            this.myGridColumn5.Visible = true;
+            this.myGridColumn5.VisibleIndex = 5;
+            this.myGridColumn5.Width = 132;
+            // 
+            // myGridColumn6
+            // 
+            this.myGridColumn6.Caption = "Nesne Türü";
+            this.myGridColumn6.Name = "myGridColumn6";
+            this.myGridColumn6.OptionsColumn.AllowEdit = false;
+            this.myGridColumn6.StatusBarAciklama = null;
+            this.myGridColumn6.StatusBarKisaYol = null;
+            this.myGridColumn6.StatusBarKisaYolAciklama = null;
+            this.myGridColumn6.Visible = true;
+            this.myGridColumn6.VisibleIndex = 6;
+            this.myGridColumn6.Width = 108;
+            // 
+            // myGridColumn7
+            // 
+            this.myGridColumn7.Caption = "Temsil Ettiği";
+            this.myGridColumn7.Name = "myGridColumn7";
+            this.myGridColumn7.OptionsColumn.AllowEdit = false;
+            this.myGridColumn7.StatusBarAciklama = null;
+            this.myGridColumn7.StatusBarKisaYol = null;
+            this.myGridColumn7.StatusBarKisaYolAciklama = null;
+            this.myGridColumn7.Visible = true;
+            this.myGridColumn7.VisibleIndex = 7;
+            this.myGridColumn7.Width = 92;
+            // 
+            // myGridColumn8
+            // 
+            this.myGridColumn8.Caption = "Görevi";
+            this.myGridColumn8.Name = "myGridColumn8";
+            this.myGridColumn8.OptionsColumn.AllowEdit = false;
+            this.myGridColumn8.StatusBarAciklama = null;
+            this.myGridColumn8.StatusBarKisaYol = null;
+            this.myGridColumn8.StatusBarKisaYolAciklama = null;
+            this.myGridColumn8.Visible = true;
+            this.myGridColumn8.VisibleIndex = 8;
+            this.myGridColumn8.Width = 79;
+            // 
+            // myGridColumn9
+            // 
+            this.myGridColumn9.Caption = "Katılım Durumu";
+            this.myGridColumn9.Name = "myGridColumn9";
+            this.myGridColumn9.OptionsColumn.AllowEdit = false;
+            this.myGridColumn9.StatusBarAciklama = null;
+            this.myGridColumn9.StatusBarKisaYol = null;
+            this.myGridColumn9.StatusBarKisaYolAciklama = null;
+            this.myGridColumn9.Visible = true;
+            this.myGridColumn9.VisibleIndex = 9;
+            this.myGridColumn9.Width = 152;
+            // 
+            // pageGorevler
+            // 
+            this.pageGorevler.BackgroundPadding = new System.Windows.Forms.Padding(2);
+            this.pageGorevler.Caption = "Görevler";
+            this.pageGorevler.Controls.Add(this.gorevlerGrid);
+            this.pageGorevler.ImageOptions.Image = global::DotNet.ERP.UI.Win.Properties.Resources.edittask_16x16;
+            this.pageGorevler.Name = "pageGorevler";
+            this.pageGorevler.Size = new System.Drawing.Size(839, 274);
+            // 
+            // gorevlerGrid
+            // 
+            this.gorevlerGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gorevlerGrid.Location = new System.Drawing.Point(0, 0);
+            this.gorevlerGrid.MainView = this.gorevlerTablo;
+            this.gorevlerGrid.MenuManager = this.ribbonControl;
+            this.gorevlerGrid.Name = "gorevlerGrid";
+            this.gorevlerGrid.Size = new System.Drawing.Size(839, 274);
+            this.gorevlerGrid.TabIndex = 0;
+            this.gorevlerGrid.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gorevlerTablo});
+            // 
+            // gorevlerTablo
+            // 
+            this.gorevlerTablo.Appearance.FooterPanel.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.gorevlerTablo.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Maroon;
+            this.gorevlerTablo.Appearance.FooterPanel.Options.UseFont = true;
+            this.gorevlerTablo.Appearance.FooterPanel.Options.UseForeColor = true;
+            this.gorevlerTablo.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Maroon;
+            this.gorevlerTablo.Appearance.HeaderPanel.Options.UseForeColor = true;
+            this.gorevlerTablo.Appearance.HeaderPanel.Options.UseTextOptions = true;
+            this.gorevlerTablo.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gorevlerTablo.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.gorevlerTablo.Appearance.ViewCaption.Options.UseForeColor = true;
+            this.gorevlerTablo.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colId1,
+            this.colKod1,
+            this.myGridColumn10,
+            this.myGridColumn13,
+            this.myGridColumn12,
+            this.myGridColumn11});
+            this.gorevlerTablo.GridControl = this.gorevlerGrid;
+            this.gorevlerTablo.Name = "gorevlerTablo";
+            this.gorevlerTablo.OptionsMenu.EnableColumnMenu = false;
+            this.gorevlerTablo.OptionsMenu.EnableFooterMenu = false;
+            this.gorevlerTablo.OptionsMenu.EnableGroupPanelMenu = false;
+            this.gorevlerTablo.OptionsNavigation.EnterMoveNextColumn = true;
+            this.gorevlerTablo.OptionsPrint.AutoWidth = false;
+            this.gorevlerTablo.OptionsPrint.PrintFooter = false;
+            this.gorevlerTablo.OptionsPrint.PrintGroupFooter = false;
+            this.gorevlerTablo.OptionsView.ColumnAutoWidth = false;
+            this.gorevlerTablo.OptionsView.HeaderFilterButtonShowMode = DevExpress.XtraEditors.Controls.FilterButtonShowMode.Button;
+            this.gorevlerTablo.OptionsView.RowAutoHeight = true;
+            this.gorevlerTablo.OptionsView.ShowAutoFilterRow = true;
+            this.gorevlerTablo.OptionsView.ShowGroupPanel = false;
+            this.gorevlerTablo.OptionsView.ShowViewCaption = true;
+            this.gorevlerTablo.StatusBarAciklama = null;
+            this.gorevlerTablo.StatusBarKisaYol = null;
+            this.gorevlerTablo.StatusBarKisaYolAciklama = null;
+            this.gorevlerTablo.ViewCaption = "Görevler";
+            // 
+            // colId1
+            // 
+            this.colId1.Caption = "Id";
+            this.colId1.FieldName = "Id";
+            this.colId1.Name = "colId1";
+            this.colId1.OptionsColumn.AllowEdit = false;
+            this.colId1.OptionsColumn.ShowInCustomizationForm = false;
+            this.colId1.StatusBarAciklama = null;
+            this.colId1.StatusBarKisaYol = null;
+            this.colId1.StatusBarKisaYolAciklama = null;
+            // 
+            // colKod1
+            // 
+            this.colKod1.AppearanceCell.Options.UseTextOptions = true;
+            this.colKod1.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colKod1.Caption = "Kod";
+            this.colKod1.FieldName = "Kod";
+            this.colKod1.Name = "colKod1";
+            this.colKod1.OptionsColumn.AllowEdit = false;
+            this.colKod1.StatusBarAciklama = null;
+            this.colKod1.StatusBarKisaYol = null;
+            this.colKod1.StatusBarKisaYolAciklama = null;
+            // 
+            // myGridColumn10
+            // 
+            this.myGridColumn10.Caption = "Görev Adı";
+            this.myGridColumn10.Name = "myGridColumn10";
+            this.myGridColumn10.OptionsColumn.AllowEdit = false;
+            this.myGridColumn10.StatusBarAciklama = null;
+            this.myGridColumn10.StatusBarKisaYol = null;
+            this.myGridColumn10.StatusBarKisaYolAciklama = null;
+            this.myGridColumn10.Visible = true;
+            this.myGridColumn10.VisibleIndex = 0;
+            this.myGridColumn10.Width = 193;
+            // 
+            // myGridColumn13
+            // 
+            this.myGridColumn13.Caption = "Özel Kod-1";
+            this.myGridColumn13.Name = "myGridColumn13";
+            this.myGridColumn13.OptionsColumn.AllowEdit = false;
+            this.myGridColumn13.StatusBarAciklama = null;
+            this.myGridColumn13.StatusBarKisaYol = null;
+            this.myGridColumn13.StatusBarKisaYolAciklama = null;
+            this.myGridColumn13.Visible = true;
+            this.myGridColumn13.VisibleIndex = 2;
+            this.myGridColumn13.Width = 159;
+            // 
+            // myGridColumn12
+            // 
+            this.myGridColumn12.Caption = "Özel Kod-2";
+            this.myGridColumn12.Name = "myGridColumn12";
+            this.myGridColumn12.OptionsColumn.AllowEdit = false;
+            this.myGridColumn12.StatusBarAciklama = null;
+            this.myGridColumn12.StatusBarKisaYol = null;
+            this.myGridColumn12.StatusBarKisaYolAciklama = null;
+            this.myGridColumn12.Visible = true;
+            this.myGridColumn12.VisibleIndex = 1;
+            this.myGridColumn12.Width = 143;
+            // 
+            // myGridColumn11
+            // 
+            this.myGridColumn11.Caption = "Açıklama";
+            this.myGridColumn11.Name = "myGridColumn11";
+            this.myGridColumn11.OptionsColumn.AllowEdit = false;
+            this.myGridColumn11.StatusBarAciklama = null;
+            this.myGridColumn11.StatusBarKisaYol = null;
+            this.myGridColumn11.StatusBarKisaYolAciklama = null;
+            this.myGridColumn11.Visible = true;
+            this.myGridColumn11.VisibleIndex = 3;
+            this.myGridColumn11.Width = 351;
+            // 
+            // pageDokumanlar
+            // 
+            this.pageDokumanlar.BackgroundPadding = new System.Windows.Forms.Padding(2);
+            this.pageDokumanlar.Caption = "Dökümanlar";
+            this.pageDokumanlar.Controls.Add(this.dokumanlarGrid);
+            this.pageDokumanlar.ImageOptions.Image = global::DotNet.ERP.UI.Win.Properties.Resources.documents_16x16;
+            this.pageDokumanlar.Name = "pageDokumanlar";
+            this.pageDokumanlar.Size = new System.Drawing.Size(839, 274);
+            // 
+            // dokumanlarGrid
+            // 
+            this.dokumanlarGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dokumanlarGrid.Location = new System.Drawing.Point(0, 0);
+            this.dokumanlarGrid.MainView = this.dokumanlarTablo;
+            this.dokumanlarGrid.MenuManager = this.ribbonControl;
+            this.dokumanlarGrid.Name = "dokumanlarGrid";
+            this.dokumanlarGrid.Size = new System.Drawing.Size(839, 274);
+            this.dokumanlarGrid.TabIndex = 0;
+            this.dokumanlarGrid.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.dokumanlarTablo});
+            // 
+            // dokumanlarTablo
+            // 
+            this.dokumanlarTablo.Appearance.FooterPanel.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.dokumanlarTablo.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Maroon;
+            this.dokumanlarTablo.Appearance.FooterPanel.Options.UseFont = true;
+            this.dokumanlarTablo.Appearance.FooterPanel.Options.UseForeColor = true;
+            this.dokumanlarTablo.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Maroon;
+            this.dokumanlarTablo.Appearance.HeaderPanel.Options.UseForeColor = true;
+            this.dokumanlarTablo.Appearance.HeaderPanel.Options.UseTextOptions = true;
+            this.dokumanlarTablo.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.dokumanlarTablo.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.dokumanlarTablo.Appearance.ViewCaption.Options.UseForeColor = true;
+            this.dokumanlarTablo.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colId2,
+            this.colKod2,
+            this.myGridColumn14,
+            this.myGridColumn15,
+            this.myGridColumn16,
+            this.myGridColumn17});
+            this.dokumanlarTablo.GridControl = this.dokumanlarGrid;
+            this.dokumanlarTablo.Name = "dokumanlarTablo";
+            this.dokumanlarTablo.OptionsMenu.EnableColumnMenu = false;
+            this.dokumanlarTablo.OptionsMenu.EnableFooterMenu = false;
+            this.dokumanlarTablo.OptionsMenu.EnableGroupPanelMenu = false;
+            this.dokumanlarTablo.OptionsNavigation.EnterMoveNextColumn = true;
+            this.dokumanlarTablo.OptionsPrint.AutoWidth = false;
+            this.dokumanlarTablo.OptionsPrint.PrintFooter = false;
+            this.dokumanlarTablo.OptionsPrint.PrintGroupFooter = false;
+            this.dokumanlarTablo.OptionsView.ColumnAutoWidth = false;
+            this.dokumanlarTablo.OptionsView.HeaderFilterButtonShowMode = DevExpress.XtraEditors.Controls.FilterButtonShowMode.Button;
+            this.dokumanlarTablo.OptionsView.RowAutoHeight = true;
+            this.dokumanlarTablo.OptionsView.ShowAutoFilterRow = true;
+            this.dokumanlarTablo.OptionsView.ShowGroupPanel = false;
+            this.dokumanlarTablo.OptionsView.ShowViewCaption = true;
+            this.dokumanlarTablo.StatusBarAciklama = null;
+            this.dokumanlarTablo.StatusBarKisaYol = null;
+            this.dokumanlarTablo.StatusBarKisaYolAciklama = null;
+            this.dokumanlarTablo.ViewCaption = "Dökümanlar";
+            // 
+            // colId2
+            // 
+            this.colId2.Caption = "Id";
+            this.colId2.FieldName = "Id";
+            this.colId2.Name = "colId2";
+            this.colId2.OptionsColumn.AllowEdit = false;
+            this.colId2.OptionsColumn.ShowInCustomizationForm = false;
+            this.colId2.StatusBarAciklama = null;
+            this.colId2.StatusBarKisaYol = null;
+            this.colId2.StatusBarKisaYolAciklama = null;
+            // 
+            // colKod2
+            // 
+            this.colKod2.AppearanceCell.Options.UseTextOptions = true;
+            this.colKod2.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colKod2.Caption = "Kod";
+            this.colKod2.FieldName = "Kod";
+            this.colKod2.Name = "colKod2";
+            this.colKod2.OptionsColumn.AllowEdit = false;
+            this.colKod2.StatusBarAciklama = null;
+            this.colKod2.StatusBarKisaYol = null;
+            this.colKod2.StatusBarKisaYolAciklama = null;
+            this.colKod2.Visible = true;
+            this.colKod2.VisibleIndex = 0;
+            this.colKod2.Width = 134;
+            // 
+            // myGridColumn14
+            // 
+            this.myGridColumn14.Caption = "Döküman Adı";
+            this.myGridColumn14.Name = "myGridColumn14";
+            this.myGridColumn14.OptionsColumn.AllowEdit = false;
+            this.myGridColumn14.StatusBarAciklama = null;
+            this.myGridColumn14.StatusBarKisaYol = null;
+            this.myGridColumn14.StatusBarKisaYolAciklama = null;
+            this.myGridColumn14.Visible = true;
+            this.myGridColumn14.VisibleIndex = 1;
+            this.myGridColumn14.Width = 188;
+            // 
+            // myGridColumn15
+            // 
+            this.myGridColumn15.Caption = "Özel Kod-1";
+            this.myGridColumn15.Name = "myGridColumn15";
+            this.myGridColumn15.OptionsColumn.AllowEdit = false;
+            this.myGridColumn15.StatusBarAciklama = null;
+            this.myGridColumn15.StatusBarKisaYol = null;
+            this.myGridColumn15.StatusBarKisaYolAciklama = null;
+            this.myGridColumn15.Visible = true;
+            this.myGridColumn15.VisibleIndex = 2;
+            this.myGridColumn15.Width = 162;
+            // 
+            // myGridColumn16
+            // 
+            this.myGridColumn16.Caption = "Özel Kod-2";
+            this.myGridColumn16.Name = "myGridColumn16";
+            this.myGridColumn16.OptionsColumn.AllowEdit = false;
+            this.myGridColumn16.StatusBarAciklama = null;
+            this.myGridColumn16.StatusBarKisaYol = null;
+            this.myGridColumn16.StatusBarKisaYolAciklama = null;
+            this.myGridColumn16.Visible = true;
+            this.myGridColumn16.VisibleIndex = 3;
+            this.myGridColumn16.Width = 168;
+            // 
+            // myGridColumn17
+            // 
+            this.myGridColumn17.Caption = "Açıklama";
+            this.myGridColumn17.Name = "myGridColumn17";
+            this.myGridColumn17.OptionsColumn.AllowEdit = false;
+            this.myGridColumn17.StatusBarAciklama = null;
+            this.myGridColumn17.StatusBarKisaYol = null;
+            this.myGridColumn17.StatusBarKisaYolAciklama = null;
+            this.myGridColumn17.Visible = true;
+            this.myGridColumn17.VisibleIndex = 4;
+            this.myGridColumn17.Width = 424;
+            // 
+            // pageEkler
+            // 
+            this.pageEkler.BackgroundPadding = new System.Windows.Forms.Padding(2);
+            this.pageEkler.Caption = "Ekler";
+            this.pageEkler.ImageOptions.Image = global::DotNet.ERP.UI.Win.Properties.Resources.projectfile_16x161;
+            this.pageEkler.Name = "pageEkler";
+            this.pageEkler.Size = new System.Drawing.Size(839, 274);
+            // 
+            // tabUst
+            // 
+            this.tabUst.AppearanceButton.Hovered.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.tabUst.AppearanceButton.Hovered.ForeColor = System.Drawing.Color.DarkBlue;
+            this.tabUst.AppearanceButton.Hovered.Options.UseFont = true;
+            this.tabUst.AppearanceButton.Hovered.Options.UseForeColor = true;
+            this.tabUst.AppearanceButton.Normal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.tabUst.AppearanceButton.Normal.Options.UseFont = true;
+            this.tabUst.AppearanceButton.Pressed.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.tabUst.AppearanceButton.Pressed.ForeColor = System.Drawing.Color.Maroon;
+            this.tabUst.AppearanceButton.Pressed.Options.UseFont = true;
+            this.tabUst.AppearanceButton.Pressed.Options.UseForeColor = true;
+            this.tabUst.Controls.Add(this.pageGenelBilgiler);
+            this.tabUst.Controls.Add(this.pageAdresBilgileri);
+            this.tabUst.Controls.Add(this.pageIletisimBilgileri);
+            this.tabUst.Controls.Add(this.pageYorumlar);
+            this.tabUst.Controls.Add(this.pageBaglantilar);
+            this.tabUst.Location = new System.Drawing.Point(12, 7);
+            this.tabUst.Name = "tabUst";
+            this.tabUst.PageProperties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.ImageAndText;
+            this.tabUst.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
+            this.pageGenelBilgiler,
+            this.pageAdresBilgileri,
+            this.pageIletisimBilgileri,
+            this.pageBaglantilar,
+            this.pageYorumlar});
+            this.tabUst.RegularSize = new System.Drawing.Size(839, 274);
+            this.tabUst.SelectedPage = this.pageGenelBilgiler;
+            this.tabUst.Size = new System.Drawing.Size(839, 274);
+            this.tabUst.TabIndex = 0;
+            this.tabUst.Text = "tabPane1";
+            // 
+            // pageGenelBilgiler
+            // 
+            this.pageGenelBilgiler.BackgroundPadding = new System.Windows.Forms.Padding(5);
+            this.pageGenelBilgiler.Caption = "Genel Bilgiler";
+            this.pageGenelBilgiler.Controls.Add(this.DataLayoutGenelBilgiler);
+            this.pageGenelBilgiler.ImageOptions.Image = global::DotNet.ERP.UI.Win.Properties.Resources.doctor_16x161;
+            this.pageGenelBilgiler.Name = "pageGenelBilgiler";
+            this.pageGenelBilgiler.Size = new System.Drawing.Size(839, 241);
+            // 
+            // DataLayoutGenelBilgiler
+            // 
+            this.DataLayoutGenelBilgiler.Controls.Add(this.txtOzelKod2);
+            this.DataLayoutGenelBilgiler.Controls.Add(this.txtOzelKod1);
+            this.DataLayoutGenelBilgiler.Controls.Add(this.txtMeslek);
+            this.DataLayoutGenelBilgiler.Controls.Add(this.txtSorumlu);
+            this.DataLayoutGenelBilgiler.Controls.Add(this.txtKisiGrubu);
+            this.DataLayoutGenelBilgiler.Controls.Add(this.txtKayitKaynak);
+            this.DataLayoutGenelBilgiler.Controls.Add(this.txtContainer);
+            this.DataLayoutGenelBilgiler.Controls.Add(this.tglDurum);
+            this.DataLayoutGenelBilgiler.Controls.Add(this.txtAciklama);
+            this.DataLayoutGenelBilgiler.Controls.Add(this.txtDogumTarihi);
+            this.DataLayoutGenelBilgiler.Controls.Add(this.txtKod);
+            this.DataLayoutGenelBilgiler.Controls.Add(this.txtCinsiyet);
+            this.DataLayoutGenelBilgiler.Controls.Add(this.txtSoyAdi);
+            this.DataLayoutGenelBilgiler.Controls.Add(this.txtAdi);
+            this.DataLayoutGenelBilgiler.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DataLayoutGenelBilgiler.Location = new System.Drawing.Point(0, 0);
+            this.DataLayoutGenelBilgiler.Name = "DataLayoutGenelBilgiler";
+            this.DataLayoutGenelBilgiler.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(1196, 136, 650, 400);
+            this.DataLayoutGenelBilgiler.OptionsFocus.EnableAutoTabOrder = false;
+            this.DataLayoutGenelBilgiler.Root = this.layoutControlGroup1;
+            this.DataLayoutGenelBilgiler.Size = new System.Drawing.Size(839, 241);
+            this.DataLayoutGenelBilgiler.TabIndex = 0;
+            this.DataLayoutGenelBilgiler.Text = "myDataLayoutControl2";
+            // 
+            // txtKayitKaynak
+            // 
+            this.txtKayitKaynak.EnterMoveNextControl = true;
+            this.txtKayitKaynak.Id = null;
+            this.txtKayitKaynak.Location = new System.Drawing.Point(337, 100);
+            this.txtKayitKaynak.MenuManager = this.ribbonControl;
+            this.txtKayitKaynak.Name = "txtKayitKaynak";
+            this.txtKayitKaynak.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtKayitKaynak.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtKayitKaynak.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Delete),
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.txtKayitKaynak.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.txtKayitKaynak.Size = new System.Drawing.Size(137, 20);
+            this.txtKayitKaynak.StatusBarAciklama = "Kişinin sisteme hangi kanaldan geldiğini seçiniz.";
+            this.txtKayitKaynak.StatusBarKisaYol = "F4 :";
+            this.txtKayitKaynak.StatusBarKisaYolAciklama = "Seçim Yap";
+            this.txtKayitKaynak.StyleController = this.DataLayoutGenelBilgiler;
+            this.txtKayitKaynak.TabIndex = 8;
+            // 
+            // txtContainer
+            // 
+            this.txtContainer.EnterMoveNextControl = true;
+            this.txtContainer.Location = new System.Drawing.Point(588, 76);
+            this.txtContainer.MenuManager = this.ribbonControl;
+            this.txtContainer.Name = "txtContainer";
+            this.txtContainer.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtContainer.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtContainer.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtContainer.Size = new System.Drawing.Size(151, 20);
+            this.txtContainer.StatusBarAciklama = "Kişinin özelliklerini belirtmek için bir veya birden fazla etiket seçiniz.";
+            this.txtContainer.StyleController = this.DataLayoutGenelBilgiler;
+            this.txtContainer.TabIndex = 11;
+            // 
+            // tglDurum
+            // 
+            this.tglDurum.EnterMoveNextControl = true;
+            this.tglDurum.Location = new System.Drawing.Point(743, 4);
+            this.tglDurum.MenuManager = this.ribbonControl;
+            this.tglDurum.Name = "tglDurum";
+            this.tglDurum.Properties.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.tglDurum.Properties.Appearance.Options.UseForeColor = true;
+            this.tglDurum.Properties.AutoHeight = false;
+            this.tglDurum.Properties.AutoWidth = true;
+            this.tglDurum.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.tglDurum.Properties.OffText = "Pasif";
+            this.tglDurum.Properties.OnText = "Aktif";
+            this.tglDurum.Size = new System.Drawing.Size(73, 20);
+            this.tglDurum.StatusBarAciklama = "Kartın kullanım durumunu seçiniz.";
+            this.tglDurum.StyleController = this.DataLayoutGenelBilgiler;
+            this.tglDurum.TabIndex = 12;
+            // 
+            // txtAciklama
+            // 
+            this.txtAciklama.EnterMoveNextControl = true;
+            this.txtAciklama.Location = new System.Drawing.Point(72, 148);
+            this.txtAciklama.MenuManager = this.ribbonControl;
+            this.txtAciklama.Name = "txtAciklama";
+            this.txtAciklama.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtAciklama.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtAciklama.Properties.MaxLength = 500;
+            this.txtAciklama.Size = new System.Drawing.Size(402, 89);
+            this.txtAciklama.StatusBarAciklama = "Kişi hakkında ek not veya bilgi giriniz.";
+            this.txtAciklama.StyleController = this.DataLayoutGenelBilgiler;
+            this.txtAciklama.TabIndex = 4;
+            // 
+            // txtDogumTarihi
+            // 
+            this.txtDogumTarihi.EditValue = null;
+            this.txtDogumTarihi.EnterMoveNextControl = true;
+            this.txtDogumTarihi.Location = new System.Drawing.Point(72, 100);
+            this.txtDogumTarihi.MenuManager = this.ribbonControl;
+            this.txtDogumTarihi.Name = "txtDogumTarihi";
+            this.txtDogumTarihi.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
+            this.txtDogumTarihi.Properties.Appearance.Options.UseTextOptions = true;
+            this.txtDogumTarihi.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.txtDogumTarihi.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtDogumTarihi.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtDogumTarihi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtDogumTarihi.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtDogumTarihi.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.DateTimeMaskManager));
+            this.txtDogumTarihi.Properties.MaskSettings.Set("useAdvancingCaret", true);
+            this.txtDogumTarihi.Size = new System.Drawing.Size(97, 20);
+            this.txtDogumTarihi.StatusBarAciklama = "Kişinin doğum tarihini giriniz.";
+            this.txtDogumTarihi.StatusBarKisaYol = "F4 :";
+            this.txtDogumTarihi.StatusBarKisaYolAciklama = "Seçim Yap";
+            this.txtDogumTarihi.StyleController = this.DataLayoutGenelBilgiler;
+            this.txtDogumTarihi.TabIndex = 3;
+            // 
+            // txtKod
+            // 
+            this.txtKod.EnterMoveNextControl = true;
+            this.txtKod.Location = new System.Drawing.Point(72, 4);
+            this.txtKod.MenuManager = this.ribbonControl;
+            this.txtKod.Name = "txtKod";
+            this.txtKod.Properties.Appearance.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.txtKod.Properties.Appearance.Options.UseBackColor = true;
+            this.txtKod.Properties.Appearance.Options.UseTextOptions = true;
+            this.txtKod.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.txtKod.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtKod.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtKod.Properties.MaxLength = 20;
+            this.txtKod.Size = new System.Drawing.Size(152, 20);
+            this.txtKod.StatusBarAciklama = "Kod giriniz.";
+            this.txtKod.StyleController = this.DataLayoutGenelBilgiler;
+            this.txtKod.TabIndex = 13;
+            // 
+            // txtCinsiyet
+            // 
+            this.txtCinsiyet.EnterMoveNextControl = true;
+            this.txtCinsiyet.Location = new System.Drawing.Point(72, 76);
+            this.txtCinsiyet.MenuManager = this.ribbonControl;
+            this.txtCinsiyet.Name = "txtCinsiyet";
+            this.txtCinsiyet.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtCinsiyet.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtCinsiyet.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtCinsiyet.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.txtCinsiyet.Size = new System.Drawing.Size(97, 20);
+            this.txtCinsiyet.StatusBarAciklama = "Kişinin cinsiyetini seçiniz.";
+            this.txtCinsiyet.StatusBarKisaYol = "F4 :";
+            this.txtCinsiyet.StatusBarKisaYolAciklama = "Seçim Yap";
+            this.txtCinsiyet.StyleController = this.DataLayoutGenelBilgiler;
+            this.txtCinsiyet.TabIndex = 2;
+            // 
+            // txtSoyAdi
+            // 
+            this.txtSoyAdi.EnterMoveNextControl = true;
+            this.txtSoyAdi.Location = new System.Drawing.Point(72, 52);
+            this.txtSoyAdi.MenuManager = this.ribbonControl;
+            this.txtSoyAdi.Name = "txtSoyAdi";
+            this.txtSoyAdi.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtSoyAdi.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtSoyAdi.Properties.MaxLength = 50;
+            this.txtSoyAdi.Size = new System.Drawing.Size(152, 20);
+            this.txtSoyAdi.StatusBarAciklama = "Kişinin soyadını giriniz.";
+            this.txtSoyAdi.StyleController = this.DataLayoutGenelBilgiler;
+            this.txtSoyAdi.TabIndex = 1;
+            // 
+            // txtAdi
+            // 
+            this.txtAdi.EnterMoveNextControl = true;
+            this.txtAdi.Location = new System.Drawing.Point(72, 28);
+            this.txtAdi.MenuManager = this.ribbonControl;
+            this.txtAdi.Name = "txtAdi";
+            this.txtAdi.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtAdi.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtAdi.Properties.MaxLength = 50;
+            this.txtAdi.Size = new System.Drawing.Size(152, 20);
+            this.txtAdi.StatusBarAciklama = "Kişinin adını giriniz. Varsa ikinci adını da bu alana yazınız.";
+            this.txtAdi.StyleController = this.DataLayoutGenelBilgiler;
+            this.txtAdi.TabIndex = 0;
+            // 
+            // layoutControlGroup1
+            // 
+            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup1.GroupBordersVisible = false;
+            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem3,
+            this.layoutControlItem6,
+            this.layoutControlItem5,
+            this.layoutControlItem4,
+            this.layoutControlItem7,
+            this.layoutControlItem16,
+            this.layoutControlItem14,
+            this.layoutControlItem15,
+            this.layoutControlItem13,
+            this.layoutControlItem10,
+            this.layoutControlItem11,
+            this.layoutControlItem12,
+            this.layoutControlItem9,
+            this.layoutControlItem8});
+            this.layoutControlGroup1.LayoutMode = DevExpress.XtraLayout.Utils.LayoutMode.Table;
+            this.layoutControlGroup1.Name = "Root";
+            columnDefinition1.SizeType = System.Windows.Forms.SizeType.Absolute;
+            columnDefinition1.Width = 169D;
+            columnDefinition2.SizeType = System.Windows.Forms.SizeType.Absolute;
+            columnDefinition2.Width = 55D;
+            columnDefinition3.SizeType = System.Windows.Forms.SizeType.Absolute;
+            columnDefinition3.Width = 50D;
+            columnDefinition4.SizeType = System.Windows.Forms.SizeType.Absolute;
+            columnDefinition4.Width = 200D;
+            columnDefinition5.SizeType = System.Windows.Forms.SizeType.Absolute;
+            columnDefinition5.Width = 45D;
+            columnDefinition6.SizeType = System.Windows.Forms.SizeType.Absolute;
+            columnDefinition6.Width = 120D;
+            columnDefinition7.SizeType = System.Windows.Forms.SizeType.Absolute;
+            columnDefinition7.Width = 100D;
+            columnDefinition8.SizeType = System.Windows.Forms.SizeType.Absolute;
+            columnDefinition8.Width = 80D;
+            this.layoutControlGroup1.OptionsTableLayoutGroup.ColumnDefinitions.AddRange(new DevExpress.XtraLayout.ColumnDefinition[] {
+            columnDefinition1,
+            columnDefinition2,
+            columnDefinition3,
+            columnDefinition4,
+            columnDefinition5,
+            columnDefinition6,
+            columnDefinition7,
+            columnDefinition8});
+            rowDefinition1.Height = 24D;
+            rowDefinition1.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition2.Height = 24D;
+            rowDefinition2.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition3.Height = 24D;
+            rowDefinition3.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition4.Height = 24D;
+            rowDefinition4.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition5.Height = 24D;
+            rowDefinition5.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition6.Height = 24D;
+            rowDefinition6.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition7.Height = 100D;
+            rowDefinition7.SizeType = System.Windows.Forms.SizeType.Percent;
+            this.layoutControlGroup1.OptionsTableLayoutGroup.RowDefinitions.AddRange(new DevExpress.XtraLayout.RowDefinition[] {
+            rowDefinition1,
+            rowDefinition2,
+            rowDefinition3,
+            rowDefinition4,
+            rowDefinition5,
+            rowDefinition6,
+            rowDefinition7});
+            this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(839, 241);
+            this.layoutControlGroup1.TextVisible = false;
+            // 
+            // layoutControlItem3
+            // 
+            this.layoutControlItem3.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.layoutControlItem3.AppearanceItemCaption.Options.UseForeColor = true;
+            this.layoutControlItem3.Control = this.txtKod;
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem3.Name = "layoutControlItem3";
+            this.layoutControlItem3.OptionsTableLayoutItem.ColumnSpan = 2;
+            this.layoutControlItem3.Size = new System.Drawing.Size(224, 24);
+            this.layoutControlItem3.Text = "Kod";
+            this.layoutControlItem3.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(63, 13);
+            this.layoutControlItem3.TextToControlDistance = 5;
+            // 
+            // layoutControlItem6
+            // 
+            this.layoutControlItem6.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.layoutControlItem6.AppearanceItemCaption.Options.UseForeColor = true;
+            this.layoutControlItem6.Control = this.txtAdi;
+            this.layoutControlItem6.Location = new System.Drawing.Point(0, 24);
+            this.layoutControlItem6.Name = "layoutControlItem6";
+            this.layoutControlItem6.OptionsTableLayoutItem.ColumnSpan = 2;
+            this.layoutControlItem6.OptionsTableLayoutItem.RowIndex = 1;
+            this.layoutControlItem6.Size = new System.Drawing.Size(224, 24);
+            this.layoutControlItem6.Text = "Adı";
+            this.layoutControlItem6.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
+            this.layoutControlItem6.TextSize = new System.Drawing.Size(63, 13);
+            this.layoutControlItem6.TextToControlDistance = 5;
+            // 
+            // layoutControlItem5
+            // 
+            this.layoutControlItem5.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.layoutControlItem5.AppearanceItemCaption.Options.UseForeColor = true;
+            this.layoutControlItem5.Control = this.txtSoyAdi;
+            this.layoutControlItem5.Location = new System.Drawing.Point(0, 48);
+            this.layoutControlItem5.Name = "layoutControlItem5";
+            this.layoutControlItem5.OptionsTableLayoutItem.ColumnSpan = 2;
+            this.layoutControlItem5.OptionsTableLayoutItem.RowIndex = 2;
+            this.layoutControlItem5.Size = new System.Drawing.Size(224, 24);
+            this.layoutControlItem5.Text = "Soyadı";
+            this.layoutControlItem5.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
+            this.layoutControlItem5.TextSize = new System.Drawing.Size(63, 13);
+            this.layoutControlItem5.TextToControlDistance = 5;
+            // 
+            // layoutControlItem4
+            // 
+            this.layoutControlItem4.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.layoutControlItem4.AppearanceItemCaption.Options.UseForeColor = true;
+            this.layoutControlItem4.Control = this.txtCinsiyet;
+            this.layoutControlItem4.Location = new System.Drawing.Point(0, 72);
+            this.layoutControlItem4.Name = "layoutControlItem4";
+            this.layoutControlItem4.OptionsTableLayoutItem.RowIndex = 3;
+            this.layoutControlItem4.Size = new System.Drawing.Size(169, 24);
+            this.layoutControlItem4.Text = "Cinsiyeti";
+            this.layoutControlItem4.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(63, 13);
+            this.layoutControlItem4.TextToControlDistance = 5;
+            // 
+            // layoutControlItem7
+            // 
+            this.layoutControlItem7.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.layoutControlItem7.AppearanceItemCaption.Options.UseForeColor = true;
+            this.layoutControlItem7.Control = this.txtDogumTarihi;
+            this.layoutControlItem7.Location = new System.Drawing.Point(0, 96);
+            this.layoutControlItem7.Name = "layoutControlItem7";
+            this.layoutControlItem7.OptionsTableLayoutItem.RowIndex = 4;
+            this.layoutControlItem7.Size = new System.Drawing.Size(169, 24);
+            this.layoutControlItem7.Text = "Doğum Tarihi";
+            this.layoutControlItem7.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
+            this.layoutControlItem7.TextSize = new System.Drawing.Size(63, 13);
+            this.layoutControlItem7.TextToControlDistance = 5;
+            // 
+            // layoutControlItem16
+            // 
+            this.layoutControlItem16.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.layoutControlItem16.AppearanceItemCaption.Options.UseForeColor = true;
+            this.layoutControlItem16.Control = this.txtContainer;
+            this.layoutControlItem16.Location = new System.Drawing.Point(519, 72);
+            this.layoutControlItem16.Name = "layoutControlItem16";
+            this.layoutControlItem16.OptionsTableLayoutItem.ColumnIndex = 5;
+            this.layoutControlItem16.OptionsTableLayoutItem.ColumnSpan = 2;
+            this.layoutControlItem16.OptionsTableLayoutItem.RowIndex = 3;
+            this.layoutControlItem16.Size = new System.Drawing.Size(220, 24);
+            this.layoutControlItem16.Text = "Etiketler";
+            this.layoutControlItem16.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
+            this.layoutControlItem16.TextSize = new System.Drawing.Size(60, 20);
+            this.layoutControlItem16.TextToControlDistance = 5;
+            // 
+            // layoutControlItem14
+            // 
+            this.layoutControlItem14.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.layoutControlItem14.AppearanceItemCaption.Options.UseForeColor = true;
+            this.layoutControlItem14.Control = this.txtAciklama;
+            this.layoutControlItem14.Location = new System.Drawing.Point(0, 144);
+            this.layoutControlItem14.Name = "layoutControlItem14";
+            this.layoutControlItem14.OptionsTableLayoutItem.ColumnSpan = 4;
+            this.layoutControlItem14.OptionsTableLayoutItem.RowIndex = 6;
+            this.layoutControlItem14.Size = new System.Drawing.Size(474, 93);
+            this.layoutControlItem14.Text = "Açıklama";
+            this.layoutControlItem14.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
+            this.layoutControlItem14.TextSize = new System.Drawing.Size(63, 13);
+            this.layoutControlItem14.TextToControlDistance = 5;
+            // 
+            // layoutControlItem15
+            // 
+            this.layoutControlItem15.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.layoutControlItem15.AppearanceItemCaption.Options.UseForeColor = true;
+            this.layoutControlItem15.Control = this.tglDurum;
+            this.layoutControlItem15.Location = new System.Drawing.Point(739, 0);
+            this.layoutControlItem15.Name = "layoutControlItem15";
+            this.layoutControlItem15.OptionsTableLayoutItem.ColumnIndex = 7;
+            this.layoutControlItem15.Size = new System.Drawing.Size(96, 24);
+            this.layoutControlItem15.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
+            this.layoutControlItem15.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem15.TextToControlDistance = 0;
+            this.layoutControlItem15.TextVisible = false;
+            // 
+            // layoutControlItem13
+            // 
+            this.layoutControlItem13.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.layoutControlItem13.AppearanceItemCaption.Options.UseForeColor = true;
+            this.layoutControlItem13.Control = this.txtKayitKaynak;
+            this.layoutControlItem13.Location = new System.Drawing.Point(274, 96);
+            this.layoutControlItem13.Name = "layoutControlItem13";
+            this.layoutControlItem13.OptionsTableLayoutItem.ColumnIndex = 3;
+            this.layoutControlItem13.OptionsTableLayoutItem.RowIndex = 4;
+            this.layoutControlItem13.Size = new System.Drawing.Size(200, 24);
+            this.layoutControlItem13.Text = "Kaynak";
+            this.layoutControlItem13.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
+            this.layoutControlItem13.TextSize = new System.Drawing.Size(54, 20);
+            this.layoutControlItem13.TextToControlDistance = 5;
+            // 
+            // pageAdresBilgileri
+            // 
+            this.pageAdresBilgileri.BackgroundPadding = new System.Windows.Forms.Padding(2);
+            this.pageAdresBilgileri.Caption = "Adres Bilgileri";
+            this.pageAdresBilgileri.ImageOptions.Image = global::DotNet.ERP.UI.Win.Properties.Resources.country_16x16;
+            this.pageAdresBilgileri.Name = "pageAdresBilgileri";
+            this.pageAdresBilgileri.Size = new System.Drawing.Size(839, 274);
+            // 
+            // pageIletisimBilgileri
+            // 
+            this.pageIletisimBilgileri.BackgroundPadding = new System.Windows.Forms.Padding(2);
+            this.pageIletisimBilgileri.Caption = "İletişim Bilgileri";
+            this.pageIletisimBilgileri.ImageOptions.Image = global::DotNet.ERP.UI.Win.Properties.Resources.mobilephone2_16x161;
+            this.pageIletisimBilgileri.Name = "pageIletisimBilgileri";
+            this.pageIletisimBilgileri.Size = new System.Drawing.Size(839, 274);
+            // 
+            // pageYorumlar
+            // 
+            this.pageYorumlar.BackgroundPadding = new System.Windows.Forms.Padding(2);
+            this.pageYorumlar.Caption = "Yorumlar";
+            this.pageYorumlar.ImageOptions.Image = global::DotNet.ERP.UI.Win.Properties.Resources.paste_16x164;
+            this.pageYorumlar.Name = "pageYorumlar";
+            this.pageYorumlar.Size = new System.Drawing.Size(839, 274);
+            // 
+            // pageBaglantilar
+            // 
+            this.pageBaglantilar.BackgroundPadding = new System.Windows.Forms.Padding(2);
+            this.pageBaglantilar.Caption = "Bağlantılar";
+            this.pageBaglantilar.ImageOptions.Image = global::DotNet.ERP.UI.Win.Properties.Resources.chartsshowlegend_16x161;
+            this.pageBaglantilar.Name = "pageBaglantilar";
+            this.pageBaglantilar.Size = new System.Drawing.Size(839, 274);
+            // 
+            // Root
+            // 
+            this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.Root.GroupBordersVisible = false;
+            this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem1,
+            this.layoutControlItem2});
+            this.Root.LayoutMode = DevExpress.XtraLayout.Utils.LayoutMode.Table;
+            this.Root.Name = "Root";
+            columnDefinition9.SizeType = System.Windows.Forms.SizeType.Percent;
+            columnDefinition9.Width = 100D;
+            columnDefinition10.SizeType = System.Windows.Forms.SizeType.Absolute;
+            columnDefinition10.Width = 210D;
+            this.Root.OptionsTableLayoutGroup.ColumnDefinitions.AddRange(new DevExpress.XtraLayout.ColumnDefinition[] {
+            columnDefinition9,
+            columnDefinition10});
+            rowDefinition8.Height = 100D;
+            rowDefinition8.SizeType = System.Windows.Forms.SizeType.Percent;
+            rowDefinition9.Height = 100D;
+            rowDefinition9.SizeType = System.Windows.Forms.SizeType.Percent;
+            this.Root.OptionsTableLayoutGroup.RowDefinitions.AddRange(new DevExpress.XtraLayout.RowDefinition[] {
+            rowDefinition8,
+            rowDefinition9});
+            this.Root.Padding = new DevExpress.XtraLayout.Utils.Padding(10, 10, 5, 5);
+            this.Root.Size = new System.Drawing.Size(863, 566);
+            this.Root.TextVisible = false;
+            // 
+            // layoutControlItem1
+            // 
+            this.layoutControlItem1.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.layoutControlItem1.AppearanceItemCaption.Options.UseForeColor = true;
+            this.layoutControlItem1.Control = this.tabUst;
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem1.Name = "layoutControlItem1";
+            this.layoutControlItem1.OptionsTableLayoutItem.ColumnSpan = 2;
+            this.layoutControlItem1.Size = new System.Drawing.Size(843, 278);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem1.TextVisible = false;
+            // 
+            // layoutControlItem2
+            // 
+            this.layoutControlItem2.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.layoutControlItem2.AppearanceItemCaption.Options.UseForeColor = true;
+            this.layoutControlItem2.Control = this.tabAlt;
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 278);
+            this.layoutControlItem2.Name = "layoutControlItem2";
+            this.layoutControlItem2.OptionsTableLayoutItem.ColumnSpan = 2;
+            this.layoutControlItem2.OptionsTableLayoutItem.RowIndex = 1;
+            this.layoutControlItem2.Size = new System.Drawing.Size(843, 278);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem2.TextVisible = false;
+            // 
+            // txtKisiGrubu
+            // 
+            this.txtKisiGrubu.EnterMoveNextControl = true;
+            this.txtKisiGrubu.Id = null;
+            this.txtKisiGrubu.Location = new System.Drawing.Point(338, 28);
+            this.txtKisiGrubu.MenuManager = this.ribbonControl;
+            this.txtKisiGrubu.Name = "txtKisiGrubu";
+            this.txtKisiGrubu.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtKisiGrubu.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtKisiGrubu.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Delete),
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.txtKisiGrubu.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.txtKisiGrubu.Size = new System.Drawing.Size(136, 20);
+            this.txtKisiGrubu.StatusBarAciklama = "Kişinin kategorisini seçiniz. Bu kategori, kişinin işletmenizle olan ilişki tipin" +
+    "i ifade eder.";
+            this.txtKisiGrubu.StatusBarKisaYol = "F4 :";
+            this.txtKisiGrubu.StatusBarKisaYolAciklama = "Seçim Yap";
+            this.txtKisiGrubu.StyleController = this.DataLayoutGenelBilgiler;
+            this.txtKisiGrubu.TabIndex = 5;
+            // 
+            // txtSorumlu
+            // 
+            this.txtSorumlu.EnterMoveNextControl = true;
+            this.txtSorumlu.Id = null;
+            this.txtSorumlu.Location = new System.Drawing.Point(338, 52);
+            this.txtSorumlu.MenuManager = this.ribbonControl;
+            this.txtSorumlu.Name = "txtSorumlu";
+            this.txtSorumlu.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtSorumlu.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtSorumlu.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Delete),
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.txtSorumlu.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.txtSorumlu.Size = new System.Drawing.Size(136, 20);
+            this.txtSorumlu.StatusBarAciklama = "Bu kişiden sorumlu olan şirket personelimizi seçiniz.";
+            this.txtSorumlu.StatusBarKisaYol = "F4 :";
+            this.txtSorumlu.StatusBarKisaYolAciklama = "Seçim Yap";
+            this.txtSorumlu.StyleController = this.DataLayoutGenelBilgiler;
+            this.txtSorumlu.TabIndex = 6;
+            // 
+            // txtMeslek
+            // 
+            this.txtMeslek.EnterMoveNextControl = true;
+            this.txtMeslek.Id = null;
+            this.txtMeslek.Location = new System.Drawing.Point(338, 76);
+            this.txtMeslek.MenuManager = this.ribbonControl;
+            this.txtMeslek.Name = "txtMeslek";
+            this.txtMeslek.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtMeslek.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtMeslek.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Delete),
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.txtMeslek.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.txtMeslek.Size = new System.Drawing.Size(136, 20);
+            this.txtMeslek.StatusBarAciklama = "Kişinin mesleğini seçiniz.Kişinin temel mesleğini belirtmek için kullanılır.";
+            this.txtMeslek.StatusBarKisaYol = "F4 :";
+            this.txtMeslek.StatusBarKisaYolAciklama = "Seçim Yap";
+            this.txtMeslek.StyleController = this.DataLayoutGenelBilgiler;
+            this.txtMeslek.TabIndex = 7;
+            // 
+            // txtOzelKod1
+            // 
+            this.txtOzelKod1.EnterMoveNextControl = true;
+            this.txtOzelKod1.Id = null;
+            this.txtOzelKod1.Location = new System.Drawing.Point(588, 28);
+            this.txtOzelKod1.MenuManager = this.ribbonControl;
+            this.txtOzelKod1.Name = "txtOzelKod1";
+            this.txtOzelKod1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtOzelKod1.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtOzelKod1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Delete),
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.txtOzelKod1.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.txtOzelKod1.Size = new System.Drawing.Size(151, 20);
+            this.txtOzelKod1.StatusBarAciklama = "Özel Kod Seçiniz.";
+            this.txtOzelKod1.StatusBarKisaYol = "F4 :";
+            this.txtOzelKod1.StatusBarKisaYolAciklama = "Seçim Yap";
+            this.txtOzelKod1.StyleController = this.DataLayoutGenelBilgiler;
+            this.txtOzelKod1.TabIndex = 9;
+            // 
+            // txtOzelKod2
+            // 
+            this.txtOzelKod2.EnterMoveNextControl = true;
+            this.txtOzelKod2.Id = null;
+            this.txtOzelKod2.Location = new System.Drawing.Point(588, 52);
+            this.txtOzelKod2.MenuManager = this.ribbonControl;
+            this.txtOzelKod2.Name = "txtOzelKod2";
+            this.txtOzelKod2.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.txtOzelKod2.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtOzelKod2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Delete),
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.txtOzelKod2.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.txtOzelKod2.Size = new System.Drawing.Size(151, 20);
+            this.txtOzelKod2.StatusBarAciklama = "Özel Kod Seçiniz.";
+            this.txtOzelKod2.StatusBarKisaYol = "F4 :";
+            this.txtOzelKod2.StatusBarKisaYolAciklama = "Seçim Yap";
+            this.txtOzelKod2.StyleController = this.DataLayoutGenelBilgiler;
+            this.txtOzelKod2.TabIndex = 10;
+            // 
+            // layoutControlItem10
+            // 
+            this.layoutControlItem10.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.layoutControlItem10.AppearanceItemCaption.Options.UseForeColor = true;
+            this.layoutControlItem10.Control = this.txtKisiGrubu;
+            this.layoutControlItem10.Location = new System.Drawing.Point(274, 24);
+            this.layoutControlItem10.Name = "layoutControlItem10";
+            this.layoutControlItem10.OptionsTableLayoutItem.ColumnIndex = 3;
+            this.layoutControlItem10.OptionsTableLayoutItem.RowIndex = 1;
+            this.layoutControlItem10.Size = new System.Drawing.Size(200, 24);
+            this.layoutControlItem10.Text = "Grup";
+            this.layoutControlItem10.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
+            this.layoutControlItem10.TextSize = new System.Drawing.Size(55, 20);
+            this.layoutControlItem10.TextToControlDistance = 5;
+            // 
+            // layoutControlItem11
+            // 
+            this.layoutControlItem11.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.layoutControlItem11.AppearanceItemCaption.Options.UseForeColor = true;
+            this.layoutControlItem11.Control = this.txtSorumlu;
+            this.layoutControlItem11.Location = new System.Drawing.Point(274, 48);
+            this.layoutControlItem11.Name = "layoutControlItem11";
+            this.layoutControlItem11.OptionsTableLayoutItem.ColumnIndex = 3;
+            this.layoutControlItem11.OptionsTableLayoutItem.RowIndex = 2;
+            this.layoutControlItem11.Size = new System.Drawing.Size(200, 24);
+            this.layoutControlItem11.Text = "Sorumlusu";
+            this.layoutControlItem11.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
+            this.layoutControlItem11.TextSize = new System.Drawing.Size(55, 20);
+            this.layoutControlItem11.TextToControlDistance = 5;
+            // 
+            // layoutControlItem12
+            // 
+            this.layoutControlItem12.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.layoutControlItem12.AppearanceItemCaption.Options.UseForeColor = true;
+            this.layoutControlItem12.Control = this.txtMeslek;
+            this.layoutControlItem12.Location = new System.Drawing.Point(274, 72);
+            this.layoutControlItem12.Name = "layoutControlItem12";
+            this.layoutControlItem12.OptionsTableLayoutItem.ColumnIndex = 3;
+            this.layoutControlItem12.OptionsTableLayoutItem.RowIndex = 3;
+            this.layoutControlItem12.Size = new System.Drawing.Size(200, 24);
+            this.layoutControlItem12.Text = "Meslek";
+            this.layoutControlItem12.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
+            this.layoutControlItem12.TextSize = new System.Drawing.Size(55, 20);
+            this.layoutControlItem12.TextToControlDistance = 5;
+            // 
+            // layoutControlItem9
+            // 
+            this.layoutControlItem9.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.layoutControlItem9.AppearanceItemCaption.Options.UseForeColor = true;
+            this.layoutControlItem9.Control = this.txtOzelKod1;
+            this.layoutControlItem9.Location = new System.Drawing.Point(519, 24);
+            this.layoutControlItem9.Name = "layoutControlItem9";
+            this.layoutControlItem9.OptionsTableLayoutItem.ColumnIndex = 5;
+            this.layoutControlItem9.OptionsTableLayoutItem.ColumnSpan = 2;
+            this.layoutControlItem9.OptionsTableLayoutItem.RowIndex = 1;
+            this.layoutControlItem9.Size = new System.Drawing.Size(220, 24);
+            this.layoutControlItem9.Text = "Özel Kod-1";
+            this.layoutControlItem9.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
+            this.layoutControlItem9.TextSize = new System.Drawing.Size(60, 20);
+            this.layoutControlItem9.TextToControlDistance = 5;
+            // 
+            // layoutControlItem8
+            // 
+            this.layoutControlItem8.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.layoutControlItem8.AppearanceItemCaption.Options.UseForeColor = true;
+            this.layoutControlItem8.Control = this.txtOzelKod2;
+            this.layoutControlItem8.Location = new System.Drawing.Point(519, 48);
+            this.layoutControlItem8.Name = "layoutControlItem8";
+            this.layoutControlItem8.OptionsTableLayoutItem.ColumnIndex = 5;
+            this.layoutControlItem8.OptionsTableLayoutItem.ColumnSpan = 2;
+            this.layoutControlItem8.OptionsTableLayoutItem.RowIndex = 2;
+            this.layoutControlItem8.Size = new System.Drawing.Size(220, 24);
+            this.layoutControlItem8.Text = "Özel Kod-2";
+            this.layoutControlItem8.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
+            this.layoutControlItem8.TextSize = new System.Drawing.Size(60, 20);
+            this.layoutControlItem8.TextToControlDistance = 5;
+            // 
+            // KisiEditForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(863, 699);
+            this.Controls.Add(this.DataLayoutGenel);
+            this.IconOptions.ShowIcon = false;
+            this.MinimumSize = new System.Drawing.Size(865, 700);
+            this.Name = "KisiEditForm";
+            this.Text = "Kişi Kartı";
+            this.Controls.SetChildIndex(this.ribbonControl, 0);
+            this.Controls.SetChildIndex(this.DataLayoutGenel, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resimMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataLayoutGenel)).EndInit();
+            this.DataLayoutGenel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tabAlt)).EndInit();
+            this.tabAlt.ResumeLayout(false);
+            this.pageAktiviteler.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.grid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tablo)).EndInit();
+            this.pageGorevler.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gorevlerGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gorevlerTablo)).EndInit();
+            this.pageDokumanlar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dokumanlarGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dokumanlarTablo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabUst)).EndInit();
+            this.tabUst.ResumeLayout(false);
+            this.pageGenelBilgiler.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DataLayoutGenelBilgiler)).EndInit();
+            this.DataLayoutGenelBilgiler.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txtKayitKaynak.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtContainer.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tglDurum.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAciklama.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDogumTarihi.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDogumTarihi.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKod.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCinsiyet.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSoyAdi.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAdi.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKisiGrubu.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSorumlu.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMeslek.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOzelKod1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOzelKod2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private UserControls.Controls.MyDataLayoutControl DataLayoutGenel;
+        private DevExpress.XtraLayout.LayoutControlGroup Root;
+        private DevExpress.XtraBars.Navigation.TabPane tabAlt;
+        private DevExpress.XtraBars.Navigation.TabNavigationPage pageAktiviteler;
+        private DevExpress.XtraBars.Navigation.TabNavigationPage pageGorevler;
+        private DevExpress.XtraBars.Navigation.TabPane tabUst;
+        private DevExpress.XtraBars.Navigation.TabNavigationPage pageGenelBilgiler;
+        private DevExpress.XtraBars.Navigation.TabNavigationPage pageAdresBilgileri;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
+        private DevExpress.XtraBars.Navigation.TabNavigationPage pageDokumanlar;
+        private DevExpress.XtraBars.Navigation.TabNavigationPage pageIletisimBilgileri;
+        private DevExpress.XtraBars.Navigation.TabNavigationPage pageYorumlar;
+        private UserControls.Controls.MyDataLayoutControl DataLayoutGenelBilgiler;
+        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
+        private UserControls.Controls.MyKodTextEdit txtKod;
+        private UserControls.Controls.MyComboBoxEdit txtCinsiyet;
+        private UserControls.Controls.MyTextEdit txtSoyAdi;
+        private UserControls.Controls.MyTextEdit txtAdi;
+        private UserControls.Controls.MyDateEdit txtDogumTarihi;
+        private UserControls.Controls.MyMemoEdit txtAciklama;
+        private UserControls.Controls.MyToogleSwitch tglDurum;
+        private UserControls.Grid.MyGridControl grid;
+        private UserControls.Grid.MyGridView tablo;
+        private UserControls.Grid.MyGridColumn colId;
+        private UserControls.Grid.MyGridColumn colKod;
+        private UserControls.Grid.MyGridColumn myGridColumn1;
+        private UserControls.Grid.MyGridColumn myGridColumn2;
+        private UserControls.Grid.MyGridColumn myGridColumn3;
+        private UserControls.Grid.MyGridColumn myGridColumn4;
+        private UserControls.Grid.MyGridColumn myGridColumn5;
+        private UserControls.Grid.MyGridColumn myGridColumn6;
+        private UserControls.Grid.MyGridColumn myGridColumn7;
+        private UserControls.Grid.MyGridColumn myGridColumn8;
+        private UserControls.Grid.MyGridColumn myGridColumn9;
+        private UserControls.Grid.MyGridControl gorevlerGrid;
+        private UserControls.Grid.MyGridView gorevlerTablo;
+        private UserControls.Grid.MyGridColumn colId1;
+        private UserControls.Grid.MyGridColumn colKod1;
+        private UserControls.Grid.MyGridColumn myGridColumn10;
+        private UserControls.Grid.MyGridColumn myGridColumn13;
+        private UserControls.Grid.MyGridColumn myGridColumn12;
+        private UserControls.Grid.MyGridColumn myGridColumn11;
+        private UserControls.Grid.MyGridControl dokumanlarGrid;
+        private UserControls.Grid.MyGridView dokumanlarTablo;
+        private UserControls.Grid.MyGridColumn colId2;
+        private UserControls.Grid.MyGridColumn colKod2;
+        private UserControls.Grid.MyGridColumn myGridColumn14;
+        private UserControls.Grid.MyGridColumn myGridColumn15;
+        private UserControls.Grid.MyGridColumn myGridColumn16;
+        private UserControls.Grid.MyGridColumn myGridColumn17;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
+        private UserControls.Controls.MyPopupContainerEdit txtContainer;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem16;
+        private DevExpress.XtraBars.Navigation.TabNavigationPage pageBaglantilar;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem14;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem15;
+        private DevExpress.XtraBars.Navigation.TabNavigationPage pageEkler;
+        private UserControls.Controls.MyButtonEdit txtKayitKaynak;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem13;
+        private UserControls.Controls.MyButtonEdit txtOzelKod2;
+        private UserControls.Controls.MyButtonEdit txtOzelKod1;
+        private UserControls.Controls.MyButtonEdit txtMeslek;
+        private UserControls.Controls.MyButtonEdit txtSorumlu;
+        private UserControls.Controls.MyButtonEdit txtKisiGrubu;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem10;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem11;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem12;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
+    }
+}

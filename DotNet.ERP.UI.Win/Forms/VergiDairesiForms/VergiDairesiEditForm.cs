@@ -1,0 +1,75 @@
+﻿using DotNet.ERP.Bll.General;
+using DotNet.ERP.Common.Enums;
+using DotNet.ERP.Model.Dto;
+using DotNet.ERP.Model.Entities;
+using DotNet.ERP.UI.Win.Forms.BaseForms;
+using DotNet.ERP.UI.Win.UserControls.Controls;
+using DevExpress.XtraEditors;
+using System;
+using DotNet.ERP.UI.Win.Forms.Functions;
+
+namespace DotNet.ERP.UI.Win.Forms.VergiDairesiForms
+{
+    public partial class VergiDairesiEditForm : BaseEditForm
+    {
+        public VergiDairesiEditForm()
+        {
+            InitializeComponent();
+            DataLayoutControl = myDataLayoutControl;
+            Bll = new VergiDairesiBll(myDataLayoutControl);
+            BaseKartTuru = KartTuru.VergiDairesi;
+            EventsLoad();
+        }
+
+        public override void Yukle()
+        {
+            OldEntity = BaseIslemTuru == IslemTuru.EntityInsert ? new VergiDairesiS() : ((VergiDairesiBll)Bll).Single(Functions.FilterFunctions.Filter<VergiDairesi>(Id));
+            NesneyiKontrollereBagla();
+
+            if (BaseIslemTuru != IslemTuru.EntityInsert) return;
+            Id = BaseIslemTuru.IdOlustur(OldEntity);
+            txtKod.Focus();
+        }    
+        protected override void NesneyiKontrollereBagla()
+        {
+            var entity = (VergiDairesiS)OldEntity;
+
+            txtKod.Text = entity.Kod;
+            txtVergiDairesiAdi.Text = entity.Ad;
+            txtIl.Id = entity.IlId;
+            txtIl.Text = entity.IlAdi;
+            txtAciklama.Text = entity.Aciklama;
+            tglDurum.IsOn = entity.Durum;
+
+        }
+        protected override void GuncelNesneOlustur()
+        {
+            CurrentEntity = new VergiDairesi
+            {
+                Id = Id,
+                Kod = txtKod.Text,
+                Ad = txtVergiDairesiAdi.Text,
+                IlId = Convert.ToInt64(txtIl.Id),
+                Aciklama = txtAciklama.Text,
+                Durum = tglDurum.IsOn
+            };
+            ButonEnabledDurumu();
+
+        }
+
+
+        protected override void SecimYap(object sender)
+        {
+            if (sender is MyButtonEdit mbe && mbe.IsClearButtonClick)
+                return;
+            if (!(sender is ButtonEdit)) return;
+
+            using (var sec = new Functions.SelectFunctions())
+            {
+                if (sender == txtIl)
+                    sec.Sec(txtIl);
+            }
+
+        }
+    }
+}
